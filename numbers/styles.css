@@ -1,0 +1,107 @@
+﻿* {
+    font-size: 40px;
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#userRecallArea {
+	width: 100%;
+	height: 100%;
+	padding: 7px;
+}
+
+td#speaker {
+    background: url(images/speaker.png);
+    background-size: contain;
+	background-clip:padding-box;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#countDownLabel {
+	font-size: 230px;
+}
+
+#QuestionDiv {
+}
+
+#AnswerDiv {
+}
+
+body {
+	background-color: black;
+}
+
+div {
+	width: 100%;
+	text-align: center;
+}
+
+td.header {
+	height: 15%;
+	border-bottom: 1px solid #aaa !important;
+}
+
+td.button {
+	/*border: solid #aaa 1px;*/
+	border-bottom: 2px solid #aaa !important;
+	background-color: #111111;
+	font-size: 50px;
+	cursor: pointer;	
+
+		
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+td.button:hover {
+	background-color: #444444;
+}
+
+td.button:active {
+	background-color: #888888;
+}
+
+span.corr {
+	font-family: "Courier New", Courier, monospace;
+	background-color: #005500;
+	border: 1px solid;
+	font-size: 35px;
+}
+span.err {
+	font-family: "Courier New", Courier, monospace;
+	background-color: #550000;
+	border: 1px solid;
+	font-size: 35px;
+}
+
+#reviewTextDiv {
+	font-size: 28px;
+}
+
+span#settingsLayout {
+	display: inline;
+}
+
+table#concLayout {
+	display: none;
+}
+
+table#memoLayout {
+	display: none;
+}
+
+table#recallLayout {
+	display: none;
+}
+
+table#reviewLayout {
+	display: none;
+}

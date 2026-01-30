@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>#R3SpokenNumbers</title>
+        <style type="text/css"></style>
+        <link rel="manifest" href="manifest.json?v4">
+        <script src="js/imagesrc.js"></script>
+        <script src="js/helpers.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/script.js?v2"></script>
+
+    </head>
+    <body id="bodyid">
+        <!-- settings  view - three tables-->
+        <table id="settingsLayout" style="display: table; width:100%; height: 100%;">
+            <tbody>
+                <tr style="height:15%;">
+                    <td style="width:15%;text-align:center;" class="button" onclick="ReturnToWebsitePage()">
+                        ◄
+                    </td>
+                    <td style="width:70%;text-align:center;" class="header">
+                        #Romans Spoken Numbers
+                    </td>
+                    <td style="width:15%;text-align:center;" class="button" onclick="StartCountdown()">
+                        ►
+                    </td>
+                </tr>
+                <tr style="height:65%;">
+                    <td colspan="3">
+                        <table style="width:100%; height: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width:60%; text-align:right;">
+                                        Number of digits:
+                                    </td>
+                                    <td>
+                                        <input type="number" id="amountOfNumbers" min="1" max="999" value="300">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:60%; text-align:right;">
+                                        Concentration time (sec): 
+                                    </td>
+                                    <td>
+                                        <input type="number" id="concentrationTime" min="1" max="300" value="3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:60%; text-align:right;">
+                                        Delay: 
+                                    </td>
+                                    <td>
+                                        <input type="range" id="speedRange" min="200" max="3000" step="50" value="1000" oninput="ChangeSpeed(this.value)" onchange="ChangeSpeed(this.value)" > <span id="rangeSpeedText">1 second</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:60%; text-align:right;">
+                                        Voice: 
+                                    </td>
+                                    <td>
+                                        <select onchange="ChangeVoice()" id="voiceSelector">
+                                            <option value="m1">Male 1</option>
+                                            <option value="m2">Male 2</option>
+                                            <option value="f1">Female 1</option>
+                                            <option value="f2" selected="">Female 2</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="height:20%;">
+                    <td style="width:100%;text-align:center;" class="button" onclick="StartCountdown()"  colspan="3">
+                        <!-- form button -->
+                        START
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- concentration  view single table -->
+        <table id="concLayout" style="display: none; width:100%; height:100%;">
+            <tbody>
+                <tr style="height:15%;">
+                    <td style="width:15%; text-align:center" class="button" onclick="reset()">
+                        ◄
+                    </td>
+                    <td style="width:70%; text-align:center;" class="header">
+                        #ConcentrationStage
+                    </td>
+                    <td style="width:15%; text-align:center;" class="button" onclick="SkipCountdown()">
+                        ►
+                    </td>
+                </tr>
+                <tr style="height:65%;" id="clContainer">
+                    <td colspan="3" style="text-align:center;vtext-align:middle;">
+                        <span id="countDownLabel">1</span>
+                    </td>
+                </tr>
+                <tr style="height:20%;">
+                    <td style="width:100%;text-align:center;" class="button" onclick="SkipCountdown()" colspan="3">
+                        <!-- form button -->
+                        SKIP
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- memorization  view single table -->
+        <table style="width:100%; height:100%;display: none;" id="memoLayout">
+            <tbody>
+                <tr style="height:15%;">
+                    <td style="width:15%; text-align:center;" class="button" onclick="reset()">
+                        ◄
+                    </td>
+                    <td style="width:70%;text-align:center;" id="memoStageHeader" class="header">
+                        #MemorizationStage
+                    </td>
+                    <td style="width:15%;text-align:center;" class="button" onclick="FinishListening()">
+                        ►
+                    </td>
+                </tr>
+                <tr style="height:65%;">
+                    <td colspan="3" id="speaker">
+                        <!--<img src="images/speaker.png" id="speakerImg">-->
+                    </td>
+                </tr>
+                <tr style="height:20%;">
+                    <td style="width:100%;text-align:center" class="button" onclick="FinishListening()" colspan="3">
+                        <!-- form button -->
+                        FINISH
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- recall  view single table --> 
+        <table id="recallLayout" style="display: none;width:100%; height:100%;">
+            <tbody>
+                <tr style="height:15%;">
+                    <td style="width:15%; text-align:center" class="button" onclick="reset()">
+                        ◄
+                    </td>
+                    <td style="width:70%;text-align:center;" class="header">
+                        #RecallStage
+                    </td>
+                    <td style="width:15%;text-align:center;" class="button" onclick="FinishRecall()">
+                        ►
+                    </td>
+                </tr>
+                <tr style="height:65%;">
+                    <td colspan="3" style="vtext-align:middle; text-align:center;">
+                        <textarea id="userRecallArea" placeholder="Input digits in this area without spaces" onkeyup="CheckInput(this)" autofocus=""></textarea>
+                    </td>
+                </tr>
+                <tr style="height:20%;">
+                    <td style="width:100%; text-align:center;" class="button" onclick="FinishRecall()" colspan="3">
+                        <!-- form button -->
+                        SUBMIT
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- review  view single table --> 
+        <table id="reviewLayout" style="display: none;width:100%; height:100%;">
+            <tbody>
+                <tr style="height:15%'">
+                    <td style="width:15%;text-align:center;" class="button" onclick="reset()">
+                        ◄
+                    </td>
+                    <td style="width:70%;text-align:center;" class="header">
+                        #ReviewStage
+                    </td>
+                    <td style="width:15%;text-align:center;" class="button" onclick="Reset()">
+                        ►
+                    </td>
+                </tr>
+                <tr style="height:65%;">
+                    <td colspan="3" style="text-align:center;vtext-align:middle">
+                        <span id="ptsDiv"></span>
+                        <br>
+                        <span id="reviewTextDiv"></span>
+                        <br><br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td> <span id="QuestionDiv"></span> </td>
+                                </tr>
+                                <tr>
+                                    <td> <span id="AnswerDiv"></span> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="height:20%;">
+                    <td style="width:100%;text-align:center;" class="button" onclick="Reset()" colspan="3">
+                        <!-- form button -->
+                        REPEAT
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
