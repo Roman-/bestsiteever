@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="description" content="Make a cool visual giveaway in your event!" />
+<meta name="keywords" content="giveaway, competition, speedcubing, bestsiteever, best site ever" />
+<meta name="author" content="Roman Strakhov">
+<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/script.js?v3"></script>
+<script type="text/javascript" src="js/saveload.js?v3"></script>
+<script src="https://bestsiteever.net/support/stats.js"></script>
+<title>Make a live giveaway on your event - best site ever</title>
+</head>
+<body class="niceBody" id="bodyid">
+
+<link rel="stylesheet" type="text/css" href="buttons.css">
+
+<style id='styleSheet'> </style>
+
+    <div id='title'></div>
+
+<div id='settingsDiv'>
+    Candidates:<br>
+    <textarea id='strings' rows='5' cols='40' placeholder='List of competitors names. Each name on separate line.' style='width: 99%;'>
+    </textarea><br>
+
+    <button class='butn' id='titleButton'>Edit title</button>
+    <div id='titleArea' style='display: none;'>
+        Title (competition name or so):<br>
+        <input type="text" id='compNameInput' value="Live giveaway" placeholder='Competition Open 2019 giveaway' size='40'/><br>
+    </div>
+
+    <button class='butn' id='stylizeButton'>Stylize page</button>
+    <div id='stylingArea' style='display: none;'>
+        If you want this giveaway page to look cool at your event, edit this stylesheet (css3):<br>
+        <textarea id='bodycss' rows='7' cols='40' placeholder="click 'reset style' if you're afraid to break something :)" style='width: 100%;'>
+        </textarea><br>
+        <button class='butn' id='stylebtn'>apply style</button>
+        <button class='butn' id='resetStylebtn'>reset style</button> (all changes saved locally)<br>
+    </div>
+    <br> <br>
+    <button class='butn' title='start' id='startbtn' style='font-size: 150%;'>START GIVEAWAY</button> - and then hit <b>Spacebar</b> (or touch the screen) to stop. Refresh the page for new giveaway.
+
+</div> <!-- div id='settings board'-->
+
+<br>
+<br>
+<br>
+    <div id='name' style='display: none;'>
+        Name Example
+    </div>
+    <img src='https://bestsiteever.net/img/giveaway.png' id='appPreview'/>
+</body>
+</html>
