@@ -1,0 +1,79 @@
+html, body {
+    height: 97%;
+    width: 97%;
+    font-family: "Trebuchet MS", sans-serif;
+}
+table.gsLayTable, td.gsLayTable {
+    width: 100%; height: 100%;
+}
+
+table td {
+    vertical-align: top;
+}
+
+#pdfLay {
+    height: 100%;
+    width: 100%;
+}
+
+#imageBgPreview {
+    border: 1px solid black;
+    cursor: pointer;
+    width: 300px;
+}
+#imageBgPreview:hover {
+    opacity: .7;
+}
+
+.label {
+    position: absolute;
+    text-align: center;
+    border: 1px dashed #aaa;
+    cursor: move;
+    margin: 0;
+    padding: 0;
+    line-height: 1.15em; /* maybe add to settings? */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.label:hover {
+    border: 1px dashed #200;
+}
+
+#labelsWrap {
+    position: absolute;
+}
+
+table.pageSetupControls td {
+    vertical-align: middle;
+}
+
+#pdfFrame {
+    width: 100%;
+    height: 97%;
+}
+
+#generatePdfBtn {
+    float: right;
+}
+
+.bigButton {
+   background:#55f;
+   font-size: 125%;
+   font-weight: bold;
+   color: "white";
+}
+
+.help {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.help:hover {
+    opacity: 1;
+    cursor: pointer;
+}

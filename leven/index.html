@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Word game based on spelling and Levenshtein distance algorithm" />
+    <meta name="keywords" content="Levenshtein Guess, Levenshtein distance" />
+    <meta name="author" content="Roman Strakhov">
+    <meta name="theme-color" content="#eee" id='metaBarColor'>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="js/3rd_party/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/fa.min.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/3rd_party/jquery-3.3.1.min.js" ></script>
+    <script src="js/3rd_party/popper.min.js"></script>
+    <script src="js/3rd_party/bootstrap.min.js"></script>
+
+    <!-- 3rd party js -->
+    <script src='js/3rd_party/bootstrap-input-spinner.js'> </script>
+    <script src='js/3rd_party/darkreader.js'> </script>
+
+    <!-- custom scripts and styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css?v09">
+    <script src='js/init.js?v09'> </script>
+    <script src='js/glob.js?v09'> </script>
+    <script src='js/dicts.js?v09'> </script>
+    <script src='js/dicts-antiflood.js?v09'> </script>
+    <script src='js/helpers.js?v09'> </script>
+    <script src='js/game.js?v09'> </script>
+    <script src='js/layouts.js?v09'> </script>
+    <script src='js/texts.js?v09'> </script>
+
+    <script src="https://bestsiteever.net/support/stats.js"></script>
+
+    <title>Levenshtein Guess</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href='#'>
+        <img src="img/logo.png?v2" width="30" height="30" class="d-inline-block align-top" alt="">
+        Levenshtein Guess
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id='' onclick='resetNewGame()'>New game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='' onclick='loMapgen()'>Levenshtein map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='' onclick='loAbout()'>About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<div id="mainLayWrap" class='container'>
+    <div id='mainLayout' class='centered'>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="container text-center">
+      <span class="text-muted">
+          <a href='https://bestsiteever.net' target='_blank'><img src='img/logo.png' class='em15'/></a>
+                      with 💖
+          by <a href='https://bestsiteever.net#me' target='_blank'>Roman Strakhov</a>
+      </span>
+  </div>
+</footer>
+
+</body>
+</html>

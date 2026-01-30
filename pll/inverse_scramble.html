@@ -1,0 +1,63 @@
+﻿<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+<head>
+<title>
+inverse scramble
+</title>
+</head>
+<body style="background-color:#f5f5f5;">
+
+<input type="text" value="R' U' R" id="alg" onkeyup="insertInversed();" style="font-size: 30px;width: 100%;"/>
+<br>
+<div id="output" style="font-size: 30px; width: 100%; padding: 10px; background-color: #ddd;">Setup: ...</div>
+
+</body>
+</html>
+
+<script>
+
+function insertInversed()
+{
+	document.getElementById("output").innerHTML = inverse_scramble(document.getElementById("alg").value);
+}
+
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.split(search).join(replacement);
+};
+
+function inverse_scramble(s)
+{
+	// deleting parantheses and double spaces
+	s = s.replaceAll('[', " ");
+	s = s.replaceAll(']', " ");
+	s = s.replaceAll('(', " ");
+    s = s.replaceAll(')', " ");
+	while(s.indexOf("  ") != -1)
+            s = s.replaceAll("  ", " ");
+			
+	// replacing apostrophes with primes
+	var apostrophesChars = "ʼ᾿ߴ՚’`";
+	for (var i = 0; i < apostrophesChars.length; i++)
+		s = s.replaceAll(apostrophesChars[i], "'");
+
+	console.log("after replace: " + s);
+	var arr = s.split(" ");
+	var result = "";
+	for (var i = 0; i < arr.length; i++)
+	{
+		var it = arr[i];
+		if (it.length == 0)
+			continue;
+		if (it[it.length - 1] == '2')
+			result = it + " " + result;
+		else if (it[it.length - 1] == '\'')
+			result = it.substr(0, it.length - 1) + " " + result;
+		else
+			result = it + "' " + result;
+	}
+	
+	return result;
+}
+</script>

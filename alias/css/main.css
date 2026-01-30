@@ -1,0 +1,133 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 5vh;
+    font-family: 'Hermes', "Trebuchet MS", sans-serif;
+}
+
+* {
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+table#selectDict {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table#selectDict tr:hover {
+    cursor: pointer;
+}
+
+.dictDescr {
+    font-size: 60%;
+}
+.dictInfoTd, .dictStarTd {
+    width: 0;
+    text-align: center;
+}
+
+div#pressToStart {
+    width: 100%;
+    height: 85%;
+    font-size: 120%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+#wordsCountDiv {
+    font-size: 150%;
+}
+
+#gameWordDiv {
+    width: 100%;
+    height: 75%;
+    cursor: pointer;
+}
+
+#skipBtnWrap {
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+    height: 100%;
+    display: inline-block;
+    display: table;
+    font-size: 0.7rem
+}
+#skipBtnLabel {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+table.resultList {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td.listWord {
+    width: 99%;
+}
+
+div#listFooterNextBtn {
+    cursor: pointer;
+}
+
+#mainMenuTable tr td:hover {
+    cursor: pointer;
+}
+
+img.icon {
+    cursor: pointer;
+    height: 1em;
+    margin: auto;
+}
+
+.dictStarTd {
+    padding: 0.3em;
+}
+
+.dictWordCount {
+    font-size: 0.7em;
+}
+
+.centerWrapOuter {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.centerWrapInner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#loadingDicts {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 150%;
+}
+
+#gameDurationMsg {
+    display: none;
+    position: absolute;
+    font-size: 150%;
+    left: 15%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+#helpLay {
+    margin: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hintToTouch {
+    font-size: 6.1vw;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="style/mainstyle.css">
+<link rel="stylesheet" type="text/css" href="style/tags.css">
+<head>
+<title>forum post</title>
+</head>
+<body class="niceBody" id="bodyid">
+
+<h1>Post source</h1>
+<textarea class='js-copytextarea' id='forums_table'>none</textarea>
+
+</body>
+</html>
+
+<script src="js/tables.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/composers.js"></script>
+
+<script>
+
+sortTables();
+
+document.getElementById("forums_table").innerHTML = composeSpeedsolvingTable();
+
+</script>

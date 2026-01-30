@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+
+<html>
+<link rel="stylesheet" type="text/css" href="style/mainstyle.css?v2">
+<link rel="stylesheet" type="text/css" href="style/tags.css">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="description" content="Collection of BLD algorithms tables: 3cycles, 5cycles, parity algs" />
+<meta name="keywords" content="bld, blindfolded, rubik's cube blindfolded, bld algorithms, bld tables, 3cycles, commutators" />
+<meta name="author" content="Roman Strakhov">
+<title>BLD tables/algorithms collection</title>
+</head>
+<body class="niceBody" id="bodyid">
+
+<h1>BLD algs collection</h1>
+
+This is the list of BLD algorithms tables developed by different people. Related speedsolving thread: <a target=_blank href='https://www.speedsolving.com/forum/threads/a-collection-of-bld-algorithms-lists.65238/'>click</a>.<br>
+If you spot any mistakes (e.g. misspelled names or broken links), or if you know other lists/tables that you think I should add - pelase contact me on <a href='https://bestsiteever.net#me'>here</a>. Good BLDing!
+
+<div style="width:100%;">
+
+<table class='datagrid' style='width:100%;'>
+    <thead>
+        <tr>
+            <th>Author</th>
+            <th>Elements</th>
+            <th>Buffers</th>
+            <th>Preview</th>
+            <th>URL</th>
+            <th>Mirrors</th>
+        </tr>
+    </thead>
+    <tbody id="maintable">
+        <tr>
+            <td rowspan=6>Loading...</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+<div id="previewWindowBack" onclick='closePreview();'></div>
+<div id="previewWindow">
+        <div id="popupPic">
+        </div>
+</div> <!-- popup -->
+
+</body>
+</html>
+
+<script src="js/tables.js?v19"></script>
+<script src="js/helpers.js?v2"></script>
+<script src="js/composers.js?v11"></script>
+
+<script>
+
+sortTables();
+
+document.getElementById("maintable").innerHTML = composeHtmlTable(window.location.hash.substr(1));
+
+document.getElementById("bodyid").addEventListener("keydown", function(event) {
+    if (event.keyCode == 27) // esc
+        closePreview();
+});
+
+</script>

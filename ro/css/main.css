@@ -1,0 +1,90 @@
+a.nav-link {
+    cursor: pointer;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.modal-full {
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.modal-full > .modal-content {
+    height: 100%;
+}
+
+.noselect{
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+
+#timer {
+    font-family: Monospace;
+    cursor: pointer;
+}
+
+.helpAlg {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 2em;
+    color: black;
+}
+
+img.helpCase {
+    width: 70px;
+}
+
+.tile {
+    position: absolute;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0;
+    line-height: auto;
+    z-index: 4;
+}
+
+/*border-bottom*/
+.bbot {
+    border-bottom: 4px solid #005;
+}
+
+.handle {
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    line-height: 1em;
+    margin: 0;
+    z-index: 5;
+    font-family: Courier new;
+}
+
+#boardContainer {
+    /*background-color: gray;*/
+    padding: 0;
+}
+
+#glass {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: none;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+
+#virtShift {
+    cursor: pointer;
+    border: 1px solid blue;
+    background-color: white;
+    padding: 2em;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: Monospace;
+}
+
+.updPb {
+    font-weight: bold;
+    color: #0000cc;
+}

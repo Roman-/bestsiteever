@@ -1,0 +1,96 @@
+div#header {
+   background-image: url("../img/wordart-day.png");
+}
+#mainheader {
+    color: black;
+}
+
+#footer, #mainmenu {
+    background-color: #C5E0E8;
+    color: black;
+}
+
+#header {
+    color: black;
+}
+
+html, body {
+    background-color: white;
+    color: black;
+}
+
+table#selectDict tr:hover {
+    background-color: #00CC99;
+}
+
+div#pressToStart {
+    background-color: #eaeaea;
+    color: black;
+}
+
+#gameWordDiv {
+    background-color: #eee;
+    color: black;
+}
+
+#mainMenuTable tr td:hover {
+    background-color: #eef;
+}
+
+/*
+tr.dictTr:nth-child(even) {
+    background-color: #eee;
+}
+*/
+
+table.resultList tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#gameDurationMsg {
+    color: black;
+    background-color: white;
+    border: 4px solid #C5E0E8;
+}
+
+.dictTr {
+    border-bottom: 1px solid #aaa;
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #aee, 0 0 30px #eae;
+  }
+}
+
+.red {
+    color: red;
+}
+
+#skipBtnWrap {
+    border: 1px solid red;
+    background-color: #faa;
+    color: black;
+}
+#skipBtnWrap:hover {
+    background-color: #a55;
+}
+
+.exampleExplanation {
+    color: gray;
+    text-decoration: italic;
+}
+/* hint under the word to "touch this if guessed" */
+.hintToTouch {
+    color: #aaa;
+}

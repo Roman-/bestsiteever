@@ -1,0 +1,383 @@
+Hi all,
+
+First post here. Beginner blind solver on 3x3 and using OP/M2 but wanting to transition to commutators for corners but the only alg list I could find was for URB buffer. So I converted the URB list (Chris Hardwick's site) to ULB using excel. Letter pairing is for Speff. I know you are supposed to work these out intuitively so I refer to it when I'm stuck.
+
+ULB Cycle Letter Pair Upper case Case Name
+ULB UBR URF BC R' F R' B2 R F' R' B2 R2 A9
+ULB UBR UFL BD L2 B2 L' F' L B2 L' F L' A9
+ULB UBR FUR BJ R' F' L F R F' L' F Direct Insert
+ULB UBR FLU BI L' B' R' B L B' R B Direct Insert
+ULB UBR FRD BK U B' D B U' B' D' B Drop and Catch
+ULB UBR FDL BL U R D2 R' U' R D2 R' Drop and Catch
+ULB UBR LUF BF B' U2 B' D' B U2 B' D B2 A9
+ULB UBR LFD BG U B' D2 B U' B' D2 B Drop and Catch
+ULB UBR LDB BH U R D' R' U' R D R' Drop and Catch
+ULB UBR BLD BS L B' R' B L' B' R B Direct Insert
+ULB UBR BDR BT U B' D' B U' B' D B Direct Insert
+ULB UBR RFU BM B2 D B' U2 B D' B' U2 B' A9
+ULB UBR RBD BO U R D R' U' R D' R' Direct Insert
+ULB UBR RDF BP B D2 B' U' B D2 B' U Drop and Catch
+ULB UBR DFR BV R2 D' L2 D R2 D' L2 D Direct Insert
+ULB UBR DLF BU L2 B' R' B L2 B' R B Direct Insert
+ULB UBR DRB BW D' R2 D' L2 D R2 D' L2 D2 A9
+ULB UBR DBL BX D2 R2 D' L2 D R2 D' L2 D' A9
+ULB URF UBR CB R2 B2 R F R' B2 R F' R A9
+ULB URF UFL CD L' B L' F2 L B' L' F2 L2 A9
+ULB URF FLU CI R2 B2 R F2 R' B2 R F2 R A9
+ULB URF FRD CK U2 F D F' U2 F D' F' Direct Insert
+ULB URF FDL CL B D' B' U2 B D B' U2 Drop and Catch
+ULB URF LUF CF B L2 B R2 B' L2 B R2 B2 A9
+ULB URF LFD CG U2 R' D R U2 R' D' R Drop and Catch
+ULB URF LDB CH U2 F D2 F' U2 F D2 F' Drop and Catch
+ULB URF BRU CQ L' B2 L' F2 L B2 L' F2 L2 A9
+ULB URF BLD CS U2 R' D2 R U2 R' D2 R Drop and Catch
+ULB URF BDR CT U2 F D' F' U2 F D F' Drop and Catch
+ULB URF RUB CN F2 L2 F' R2 F L2 F' R2 F' A9
+ULB URF RBD CO L' D L U2 L' D' L U2 Drop and Catch
+ULB URF RDF CP U2 R' D' R U2 R' D R Direct Insert
+ULB URF DFR CV L' U2 L U R2 U' L' U R2 U L Columns
+ULB URF DLF CU U' F2 U F2 U L2 U' F2 U' F2 U L2 Per Special
+ULB URF DRB CW U2 F' U2 F R2 F R2 F' R2 B' R2 B Per Special
+ULB URF DBL CX L' B' L2 B' R B L2 B' R' B2 L Columns
+ULB UFL UBR DB L F' L B2 L' F L B2 L2 A9
+ULB UFL URF DC L2 F2 L B L' F2 L B' L A9
+ULB UFL FUR DJ L2 D' L U2 L' D L U2 L A9
+ULB UFL FRD DK L' D2 L U L' D2 L U' Drop and Catch
+ULB UFL FDL DL U' F' D' F U F' D F Direct Insert
+ULB UFL LFD DG U' L D L' U L D' L' Direct Insert
+ULB UFL LDB DH L' D' L U L' D L U' Direct Insert
+ULB UFL BRU DQ L U2 L D L' U2 L D' L2 A9
+ULB UFL BLD DS U' F' D F U F' D' F Drop and Catch
+ULB UFL BDR DT U' L D2 L' U L D2 L' Drop and Catch
+ULB UFL RUB DN R' F R B' R' F' R B Direct Insert
+ULB UFL RFU DM L' B' L F' L' B L F Direct Insert
+ULB UFL RBD DO U' F' D2 F U F' D2 F Drop and Catch
+ULB UFL RDF DP U' L D' L' U L D L' Drop and Catch
+ULB UFL DFR DV L' B' L F2 L' B L F2 Direct Insert
+ULB UFL DLF DU D F2 D B2 D' F2 D B2 D2 A9
+ULB UFL DRB DW D' F2 D B2 D' F2 D B2 Toss Up
+ULB UFL DBL DX D2 F2 D B2 D' F2 D B2 D A9
+ULB FUR UBR JB F' L F R' F' L' F R Drop and Catch
+ULB FUR UFL JD L' U2 L' D' L U2 L' D L2 A9
+ULB FUR FLU JI U' R' U L U' R U L' Direct Insert
+ULB FUR FRD JK F R' B2 R F' R' B2 R Drop and Catch
+ULB FUR FDL JL F2 D' B D F2 D' B' D Drop and Catch
+ULB FUR LUF JF F2 D F' U2 F D' F' U2 F' A9
+ULB FUR LFD JG U' L B2 L' F' L B2 L' F U Orthogonals
+ULB FUR LDB JH D F2 D' B D F2 D' B' Toss Up
+ULB FUR BRU JQ F' L U2 L' F L F' U2 F L' Cyclic Shift
+ULB FUR BLD JS B R2 B' L' B R2 B' L Drop and Catch
+ULB FUR BDR JT F' L F R2 F' L' F R2 Drop and Catch
+ULB FUR RUB JN R' F' R B' R' F R B Direct Insert
+ULB FUR RBD JO U' R B' L2 B R' B' L2 B U Orthogonals
+ULB FUR RDF JP D' F2 D' B D F2 D' B' D2 A9
+ULB FUR DFR JV F' L F R F' L' F R' Drop and Catch
+ULB FUR DLF JU D R' D' L2 D R D' L2 Drop and Catch
+ULB FUR DRB JW B2 L F' L' B2 L F L' Drop and Catch
+ULB FUR DBL JX D2 R' D' L2 D R D' L2 D' A9
+ULB FLU UBR IB L F R' F' L' F R F' Drop and Catch
+ULB FLU URF IC R' F2 R' B2 R F2 R' B2 R2 A9
+ULB FLU FUR IJ U B U' F' U B' U' F Direct Insert
+ULB FLU FRD IK U B U' F2 U B' U' F2 Direct Insert
+ULB FLU FDL IL U B U' F U B' U' F' Direct Insert
+ULB FLU LFD IG U2 R U' L2 U R' U' L2 U' A9
+ULB FLU LDB IH D F' D' B D F D' B' Drop and Catch
+ULB FLU BRU IQ R2 F2 R' B2 R F2 R' B2 R' A9
+ULB FLU BLD IS U' F U' B2 U F' U' B2 U2 A9
+ULB FLU BDR IT U R' U' L' U R U' L Drop and Catch
+ULB FLU RUB IN U R U' L' U R' U' L Direct Insert
+ULB FLU RFU IM L F R F' L' F R' F' Direct Insert
+ULB FLU RBD IO L U' R2 U L' U' R2 U Drop and Catch
+ULB FLU RDF IP L U' R U L' U' R' U Drop and Catch
+ULB FLU DFR IV U R2 U' L' U R2 U' L Drop and Catch
+ULB FLU DLF IU U2 F2 U' B' U F2 U' B U' A9
+ULB FLU DRB IW R F2 R' B2 R F2 R' B2 Toss Up
+ULB FLU DBL IX U' L2 U' R' U L2 U' R U2 A9
+ULB FRD UBR KB U' L' D2 L U L' D2 L Drop and Catch
+ULB FRD URF KC U2 L' D2 L U2 L' D2 L Drop and Catch
+ULB FRD UFL KD U L' D2 L U' L' D2 L Drop and Catch
+ULB FRD FUR KJ R' B2 R F R' B2 R F' Drop and Catch
+ULB FRD FLU KI F2 U B U' F2 U B' U' Direct Insert
+ULB FRD FDL KL F D' B D F' D' B' D Drop and Catch
+ULB FRD LUF KF B L2 B R' B' L2 B R B2 A9
+ULB FRD LFD KG D' F U' F' D F U F' Toss Up
+ULB FRD LDB KH B' L F2 L' B L F2 L' Drop and Catch
+ULB FRD BRU KQ U' B2 D B U2 B' D' B U2 B U Columns
+ULB FRD BLD KS D2 B' U' B D2 B' U B Direct Insert
+ULB FRD BDR KT F2 L F R2 F' L' F R2 F A9
+ULB FRD RUB KN U F' U' B' U F U' B Drop and Catch
+ULB FRD RFU KM D2 L' D' R2 D L D' R2 D' A9
+ULB FRD RBD KO R U2 R' D' R U2 R' D Toss Up
+ULB FRD DLF KU U' R U' F2 U R' U' R F2 R' U2 Columns
+ULB FRD DRB KW D' F' D B2 D' F D B2 Direct Insert
+ULB FRD DBL KX U' L2 U' R U L2 U' R' U2 A9
+ULB FDL UBR LB U' B D' B' U B D B' Drop and Catch
+ULB FDL URF LC U2 B D' B' U2 B D B' Drop and Catch
+ULB FDL UFL LD U B D' B' U' B D B' Drop and Catch
+ULB FDL FUR LJ D' B D F2 D' B' D F2 Drop and Catch
+ULB FDL FLU LI F U B U' F' U B' U' Direct Insert
+ULB FDL FRD LK F' R' B2 R F R' B2 R Drop and Catch
+ULB FDL LUF LF D' B L2 B' D B D' L2 D B' Cyclic Shift
+ULB FDL LDB LH L' F' L B L' F L B' Direct Insert
+ULB FDL BRU LQ R2 F' R' B2 R F R' B2 R' A9
+ULB FDL BLD LS B' L2 B' R' B L2 B' R B2 A9
+ULB FDL BDR LT D2 R' U R D2 R' U' R Toss Up
+ULB FDL RUB LN U F2 U' B' U F2 U' B Drop and Catch
+ULB FDL RFU LM U' L F' R2 F L' F' R2 F U Orthogonals
+ULB FDL RBD LO U' F R2 F' L' F R2 F' L U Orthogonals
+ULB FDL RDF LP D F' U2 F D' F' U2 F Toss Up
+ULB FDL DFR LV R' D2 R' U R D2 R' U' R2 A9
+ULB FDL DRB LW R F' R' B2 R F R' B2 Drop and Catch
+ULB FDL DBL LX D2 R D' L2 D R' D' L2 D' A9
+ULB LUF UBR FB B2 D' B U2 B' D B U2 B A9
+ULB LUF URF FC B2 R2 B' L2 B R2 B' L2 B' A9
+ULB LUF FUR FJ F U2 F D F' U2 F D' F2 A9
+ULB LUF FRD FK B2 R' B' L2 B R B' L2 B' A9
+ULB LUF FDL FL B D' L2 D B' D' B L2 B' D Cyclic Shift
+ULB LUF LFD FG F' L2 F' R' F L2 F' R F2 A9
+ULB LUF LDB FH F U2 F D2 F' U2 F D2 F2 A9
+ULB LUF BRU FQ R' F U2 F' R F R' U2 R F' Cyclic Shift
+ULB LUF BLD FS B2 R B' L2 B R' B' L2 B' A9
+ULB LUF BDR FT F U2 F D' F' U2 F D F2 A9
+ULB LUF RUB FN F' L2 F' R2 F L2 F' R2 F2 A9
+ULB LUF RFU FM B' R U2 R' B R B' U2 B R' Cyclic Shift
+ULB LUF RBD FO F' L2 F' R F L2 F' R' F2 A9
+ULB LUF RDF FP U2 B U2 B D2 B' U2 B D2 B2 U2 Columns
+ULB LUF DFR FV B2 D B U2 B' D' B U2 B A9
+ULB LUF DLF FU B2 D2 B U2 B' D2 B U2 B A9
+ULB LUF DRB FW U' L2 D L U2 L' D' L U2 L U Columns
+ULB LUF DBL FX D F' L2 F D' F' D L2 D' F Cyclic Shift
+ULB LFD UBR GB B' D2 B U B' D2 B U' Drop and Catch
+ULB LFD URF GC R' D R U2 R' D' R U2 Drop and Catch
+ULB LFD UFL GD L D L' U' L D' L' U Direct Insert
+ULB LFD FUR GJ U' F' L B2 L' F L B2 L' U Orthogonals
+ULB LFD FLU GI U L2 U R U' L2 U R' U2 A9
+ULB LFD FRD GK F U' F' D' F U F' D Toss Up
+ULB LFD LUF GF F2 R' F L2 F' R F L2 F A9
+ULB LFD LDB GH D F D' B D F' D' B' Direct Insert
+ULB LFD BRU GQ R2 D R U2 R' D' R U2 R A9
+ULB LFD BLD GS F U' F' D F U F' D' Toss Up
+ULB LFD BDR GT U' L' B2 L F L' B2 L F' U Orthogonals
+ULB LFD RUB GN R' F2 R B' R' F2 R B Drop and Catch
+ULB LFD RFU GM F2 R B' R' F2 R B R' Drop and Catch
+ULB LFD RBD GO F U' F' D2 F U F' D2 Toss Up
+ULB LFD RDF GP R F2 R B' R' F2 R B R2 A9
+ULB LFD DFR GV F' D B2 D' F D B2 D' Drop and Catch
+ULB LFD DRB GW B2 U' F U B2 U' F' U Drop and Catch
+ULB LFD DBL GX F U' L2 U F' U' F L2 F' U Cyclic Shift
+ULB LDB UBR HB U' L' D' L U L' D L Direct Insert
+ULB LDB URF HC U2 L' D' L U2 L' D L Direct Insert
+ULB LDB UFL HD U L' D' L U' L' D L Direct Insert
+ULB LDB FUR HJ L F' L' B' L F L' B Drop and Catch
+ULB LDB FLU HI U' F' U B' U' F U B Direct Insert
+ULB LDB FRD HK L F2 L' B' L F2 L' B Drop and Catch
+ULB LDB FDL HL L U L' D' L U' L' D Direct Insert
+ULB LDB LUF HF F2 D2 F' U2 F D2 F' U2 F' A9
+ULB LDB LFD HG U' F U B' U' F' U B Toss Up
+ULB LDB BRU HQ L' B2 L' F' L B2 L' F L2 A9
+ULB LDB BDR HT L U L' D L U' L' D' Direct Insert
+ULB LDB RUB HN U2 L2 U' R' U L2 U' R U' A9
+ULB LDB RFU HM B L' F2 L B' L' F2 L Drop and Catch
+ULB LDB RBD HO L2 F L' B2 L F' L' B2 L' A9
+ULB LDB RDF HP L U L' D2 L U' L' D2 Direct Insert
+ULB LDB DFR HV U' F2 U B' U' F2 U B Drop and Catch
+ULB LDB DLF HU F' D2 F' U2 F D2 F' U2 F2 A9
+ULB LDB DRB HW L2 D2 L' U' L D2 L' U L' A9
+ULB BRU URF QC L2 F2 L B2 L' F2 L B2 L A9
+ULB BRU UFL QD L2 D L' U2 L D' L' U2 L' A9
+ULB BRU FUR QJ L F' U2 F L' F' L U2 L' F Cyclic Shift
+ULB BRU FLU QI R B2 R F2 R' B2 R F2 R2 A9
+ULB BRU FRD QK U' B' U2 B' D B U2 B' D' B2 U Columns
+ULB BRU FDL QL R B2 R F' R' B2 R F R2 A9
+ULB BRU LUF QF F R' U2 R F' R' F U2 F' R Cyclic Shift
+ULB BRU LFD QG R' U2 R' D R U2 R' D' R2 A9
+ULB BRU LDB QH L2 F' L B2 L' F L B2 L A9
+ULB BRU BLD QS R' U2 R' D2 R U2 R' D2 R2 A9
+ULB BRU BDR QT R B2 R F R' B2 R F' R2 A9
+ULB BRU RFU QM R' U2 R' D' R U2 R' D R2 A9
+ULB BRU RBD QO L' D B2 D' L D L' B2 L D' Cyclic Shift
+ULB BRU RDF QP L2 F L B2 L' F' L B2 L A9
+ULB BRU DFR QV L2 D' L' U2 L D L' U2 L' A9
+ULB BRU DLF QU U2 R2 D2 R' U2 R D2 R' U2 R' U2 Columns
+ULB BRU DRB QW L2 D2 L' U2 L D2 L' U2 L' A9
+ULB BRU DBL QX D' R B2 R' D R D' B2 D R' Cyclic Shift
+ULB BLD UBR SB U' B D B' U B D' B' Direct Insert
+ULB BLD URF SC U2 B D B' U2 B D' B' Direct Insert
+ULB BLD UFL SD U B D B' U' B D' B' Direct Insert
+ULB BLD FUR SJ L' B R2 B' L B R2 B' Drop and Catch
+ULB BLD FLU SI U2 B2 U F U' B2 U F' U A9
+ULB BLD FRD SK D2 R U2 R' D2 R U2 R' Toss Up
+ULB BLD FDL SL B2 R' B L2 B' R B L2 B A9
+ULB BLD LUF SF B L2 B R B' L2 B R' B2 A9
+ULB BLD LFD SG D F U' F' D' F U F' Toss Up
+ULB BLD BRU SQ R2 D2 R U2 R' D2 R U2 R A9
+ULB BLD BDR ST U R' U' L U R U' L' Drop and Catch
+ULB BLD RUB SN U R U' L U R' U' L' Direct Insert
+ULB BLD RFU SM L' D' R2 D L D' R2 D Drop and Catch
+ULB BLD RBD SO L' B R B' L B R' B' Direct Insert
+ULB BLD RDF SP B' R2 B L B' R2 B L' Drop and Catch
+ULB BLD DFR SV U R2 U' L U R2 U' L' Drop and Catch
+ULB BLD DLF SU D F' D B2 D' F D B2 D2 A9
+ULB BLD DRB SW R D2 R U2 R' D2 R U2 R2 A9
+ULB BDR UBR TB R' B L B' R B L' B' Direct Insert
+ULB BDR URF TC F D' F' U2 F D F' U2 Drop and Catch
+ULB BDR UFL TD L D2 L' U' L D2 L' U Drop and Catch
+ULB BDR FUR TJ R2 F' L F R2 F' L' F Drop and Catch
+ULB BDR FLU TI L' U R' U' L U R U' Drop and Catch
+ULB BDR FRD TK F' R2 F' L F R2 F' L' F2 A9
+ULB BDR FDL TL R' U R D2 R' U' R D2 Toss Up
+ULB BDR LUF TF F2 D' F' U2 F D F' U2 F' A9
+ULB BDR LFD TG U' F L' B2 L F' L' B2 L U Orthogonals
+ULB BDR LDB TH D L U L' D' L U' L' Direct Insert
+ULB BDR BRU TQ R2 F R' B2 R F' R' B2 R' A9
+ULB BDR BLD TS L U R' U' L' U R U' Drop and Catch
+ULB BDR RUB TN U' B2 U' F' U B2 U' F U2 A9
+ULB BDR RFU TM U' R F2 R' B' R F2 R' B U Orthogonals
+ULB BDR RDF TP D' F' U2 F D F' U2 F Toss Up
+ULB BDR DFR TV R D' L2 D R' D' L2 D Drop and Catch
+ULB BDR DLF TU L2 U R' U' L2 U R U' Drop and Catch
+ULB BDR DBL TX R' U B2 U' R U R' B2 R U' Cyclic Shift
+ULB RUB URF NC F R2 F L2 F' R2 F L2 F2 A9
+ULB RUB UFL ND L F L' B L F' L' B' Direct Insert
+ULB RUB FUR NJ L F' L' B L F L' B' Toss Up
+ULB RUB FLU NI U' F' U B U' F U B' Direct Insert
+ULB RUB FRD NK L F2 L' B L F2 L' B' Drop and Catch
+ULB RUB FDL NL B' U F2 U' B U F2 U' Drop and Catch
+ULB RUB LUF NF F2 R2 F L2 F' R2 F L2 F A9
+ULB RUB LFD NG U' F U B U' F' U B' Drop and Catch
+ULB RUB LDB NH U R' U L2 U' R U L2 U2 A9
+ULB RUB BLD NS L U R U' L' U R' U' Direct Insert
+ULB RUB BDR NT U2 F' U B2 U' F U B2 U A9
+ULB RUB RFU NM U' L' U R U' L U R' Direct Insert
+ULB RUB RBD NO U' L' U R' U' L U R Direct Insert
+ULB RUB RDF NP U' L' U R2 U' L U R2 Direct Insert
+ULB RUB DFR NV U' F2 U B U' F2 U B' Drop and Catch
+ULB RUB DLF NU L2 U R U' L2 U R' U' Direct Insert
+ULB RUB DRB NW U2 R2 U L U' R2 U L' U A9
+ULB RUB DBL NX U B2 U F U' B2 U F' U2 A9
+ULB RFU UBR MB B U2 B D B' U2 B D' B2 A9
+ULB RFU UFL MD F' L' B' L F L' B L Direct Insert
+ULB RFU FLU MI L' B' R B L B' R' B Drop and Catch
+ULB RFU FRD MK D R2 D L' D' R2 D L D2 A9
+ULB RFU FDL ML U' F' R2 F L F' R2 F L' U Orthogonals
+ULB RFU LUF MF R B' U2 B R' B' R U2 R' B Cyclic Shift
+ULB RFU LFD MG R B' R' F2 R B R' F2 Drop and Catch
+ULB RFU LDB MH L' F2 L B L' F2 L B' Drop and Catch
+ULB RFU BRU MQ R2 D' R U2 R' D R U2 R A9
+ULB RFU BLD MS L B' R B L' B' R' B Drop and Catch
+ULB RFU BDR MT U' B' R F2 R' B R F2 R' U Orthogonals
+ULB RFU RUB MN U F U' B' U F' U' B Direct Insert
+ULB RFU RBD MO R2 D L' D' R2 D L D' Drop and Catch
+ULB RFU RDF MP R' F L2 F' R F L2 F' Drop and Catch
+ULB RFU DFR MV F D B2 D' F' D B2 D' Drop and Catch
+ULB RFU DLF MU L2 B' R B L2 B' R' B Drop and Catch
+ULB RFU DRB MW D' F D B2 D' F' D B2 Drop and Catch
+ULB RFU DBL MX D2 F D B2 D' F' D B2 D A9
+ULB RBD UBR OB U' L' D L U L' D' L Drop and Catch
+ULB RBD URF OC U2 L' D L U2 L' D' L Drop and Catch
+ULB RBD UFL OD U L' D L U' L' D' L Drop and Catch
+ULB RBD FUR OJ U' B' L2 B R B' L2 B R' U Orthogonals
+ULB RBD FLU OI U' R2 U L U' R2 U L' Drop and Catch
+ULB RBD FRD OK D' R U2 R' D R U2 R' Toss Up
+ULB RBD FDL OL U' L' F R2 F' L F R2 F' U Orthogonals
+ULB RBD LUF OF F2 R F L2 F' R' F L2 F A9
+ULB RBD LFD OG D2 F U' F' D2 F U F' Toss Up
+ULB RBD LDB OH L B2 L F L' B2 L F' L2 A9
+ULB RBD BRU OQ D L' B2 L D' L' D B2 D' L Cyclic Shift
+ULB RBD BLD OS D B' U' B D' B' U B Direct Insert
+ULB RBD RUB ON D L' D' R D L D' R' Drop and Catch
+ULB RBD RFU OM D L' D' R2 D L D' R2 Drop and Catch
+ULB RBD RDF OP D L' D' R' D L D' R Drop and Catch
+ULB RBD DFR OV F D2 F U' F' D2 F U F2 A9
+ULB RBD DLF OU F' R F L2 F' R' F L2 Drop and Catch
+ULB RBD DBL OX D2 F' D B2 D' F D B2 D A9
+ULB RDF UBR PB U' B D2 B' U B D2 B' Drop and Catch
+ULB RDF URF PC U2 B D2 B' U2 B D2 B' Drop and Catch
+ULB RDF UFL PD U B D2 B' U' B D2 B' Drop and Catch
+ULB RDF FUR PJ D2 B D F2 D' B' D F2 D A9
+ULB RDF FLU PI U' R U L U' R' U L' Drop and Catch
+ULB RDF FDL PL F' U2 F D F' U2 F D' Toss Up
+ULB RDF LUF PF U2 B2 D2 B' U2 B D2 B' U2 B' U2 Columns
+ULB RDF LFD PG R2 B' R' F2 R B R' F2 R' A9
+ULB RDF LDB PH F' U2 F D2 F' U2 F D2 Toss Up
+ULB RDF BRU PQ L' B2 L' F L B2 L' F' L2 A9
+ULB RDF BLD PS L B' R2 B L' B' R2 B Drop and Catch
+ULB RDF BDR PT F' U2 F D' F' U2 F D Toss Up
+ULB RDF RUB PN F L2 F' R2 F L2 F' R2 Toss Up
+ULB RDF RFU PM F L2 F' R' F L2 F' R Drop and Catch
+ULB RDF RBD PO F L2 F' R F L2 F' R' Drop and Catch
+ULB RDF DLF PU L2 B' R2 B L2 B' R2 B Drop and Catch
+ULB RDF DRB PW U' B' D2 B' U B D2 B' U' B2 U Columns
+ULB RDF DBL PX U B2 U F' U' B2 U F U2 A9
+ULB DFR UBR VB D' L2 D R2 D' L2 D R2 Toss Up
+ULB DFR URF VC L' U' R2 U' L U R2 U' L' U2 L Columns
+ULB DFR UFL VD F2 L' B' L F2 L' B L Direct Insert
+ULB DFR FUR VJ D' L2 D R' D' L2 D R Drop and Catch
+ULB DFR FLU VI L' U R2 U' L U R2 U' Drop and Catch
+ULB DFR FDL VL R2 U R D2 R' U' R D2 R A9
+ULB DFR LUF VF B' U2 B' D B U2 B' D' B2 A9
+ULB DFR LFD VG D B2 D' F' D B2 D' F Drop and Catch
+ULB DFR LDB VH L' F L B L' F' L B' Drop and Catch
+ULB DFR BRU VQ L U2 L D' L' U2 L D L2 A9
+ULB DFR BLD VS L U R2 U' L' U R2 U' Drop and Catch
+ULB DFR BDR VT D' L2 D R D' L2 D R' Drop and Catch
+ULB DFR RUB VN B U' F2 U B' U' F2 U Drop and Catch
+ULB DFR RFU VM F' R B' R' F R B R' Drop and Catch
+ULB DFR RBD VO F2 U' F' D2 F U F' D2 F' A9
+ULB DFR DLF VU L2 U R2 U' L2 U R2 U' Toss Up
+ULB DFR DRB VW R F R' B2 R F' R' B2 Direct Insert
+ULB DFR DBL VX L2 U2 R2 U' L2 U R2 U' L2 U' L2 Columns
+ULB DLF UBR UB L2 D R2 D' L2 DR2 D' Toss Up
+ULB DLF URF UC U2 F' L2 F L2 F U2 F' L2 F' L2 F Per Special
+ULB DLF UFL UD D2 B2 D' F2 D B2 D' F2 D' A9
+ULB DLF FUR UJ L2 D R' D' L2 D R D' Drop and Catch
+ULB DLF FLU UI U B' U F2 U' B U F2 U2 A9
+ULB DLF FRD UK U2 L2 U2 L' D2 L U2 L' D2 L' U2 Columns
+ULB DLF LUF UF B' U2 B' D2 B U2 B' D2 B2 A9
+ULB DLF LDB UH F2 U2 F D2 F' U2 F D2 F A9
+ULB DLF BRU UQ U2 R U2 R D2 R' U2 R D2 R2 U2 Columns
+ULB DLF BLD US D2 B2 D' F' D B2 D' F D' A9
+ULB DLF BDR UT U R' U' L2 U R U' L2 Drop and Catch
+ULB DLF RUB UN U R U' L2 U R' U' L2 Direct Insert
+ULB DLF RFU UM B' R B L2 B' R' B L2 Drop and Catch
+ULB DLF RBD UO L2 F' R F L2 F' R' F Drop and Catch
+ULB DLF RDF UP L2 D R D' L2 D R' D' Direct Insert
+ULB DLF DFR UV U R2 U' L2 U R2 U' L2 Toss Up
+ULB DLF DRB UW U' L2 U B2 U B2 U' B2 D' B2 D L2 Per Special
+ULB DLF DBL UX U B2 U F2 U' B2 U F2 U2 A9
+ULB DRB UBR WB D2 L2 D R2 D' L2 D R2 D A9
+ULB DRB URF WC U' B2 U B2 U R2 U' B2 U' B2 U R2 Per Special
+ULB DRB UFL WD L F L' B2 L F' L' B2 Direct Insert
+ULB DRB FUR WJ L F' L' B2 L F L' B2 Drop and Catch
+ULB DRB FLU WI U' F' U B2 U' F U B2 Direct Insert
+ULB DRB FRD WK L F2 L' B2 L F2 L' B2 Toss Up
+ULB DRB FDL WL B2 R F' R' B2 R F R' Drop and Catch
+ULB DRB LUF WF U' L' U2 L' D L U2 L' D' L2 U Columns
+ULB DRB LFD WG U' F U B2 U' F' U B2 Drop and Catch
+ULB DRB LDB WH L U' L D2 L' U L D2 L2 A9
+ULB DRB BRU WQ L U2 L D2 L' U2 L D2 L2 A9
+ULB DRB BLD WS R2 U2 R' D2 R U2 R' D2 R' A9
+ULB DRB RUB WN U' L U' R2 U L' U' R2 U2 A9
+ULB DRB RFU WM B2 D' F D B2 D' F' D Drop and Catch
+ULB DRB RDF WP U' B2 U B D2 B' U' B D2 B U Columns
+ULB DRB DFR WV U' F2 U B2 U' F2 U B2 Toss Up
+ULB DRB DLF WU U B2 U' L2 U' L2 U L2 D L2 D' B2 Per Special
+ULB DRB DBL WX U' L2 U' R2 U L2 U' R2 U2 A9
+ULB DBL UBR XB D L2 D R2 D' L2 D R2 D2 A9
+ULB DBL URF XC L' B2 R B L2 B' R' B L2 B L Columns
+ULB DBL UFL XD D' B2 D' F2 D B2 D' F2 D2 A9
+ULB DBL FUR XJ D L2 D R' D' L2 D R D2 A9
+ULB DBL FLU XI U2 R' U L2 U' R U L2 U A9
+ULB DBL FRD XK U2 R U L2 U' R' U L2 U A9
+ULB DBL FDL XL D L2 D R D' L2 D R' D2 A9
+ULB DBL LUF XF F' D L2 D' F D F' L2 F D' Cyclic Shift
+ULB DBL LFD XG U' F L2 F' U F U' L2 U F' Cyclic Shift
+ULB DBL BRU XQ R D' B2 D R' D' R B2 R' D Cyclic Shift
+ULB DBL BDR XT U R' B2 R U' R' U B2 U' R Cyclic Shift
+ULB DBL RUB XN U2 F U' B2 U F' U' B2 U' A9
+ULB DBL RFU XM D' B2 D' F D B2 D' F' D2 A9
+ULB DBL RBD XO D' B2 D' F' D B2 D' F D2 A9
+ULB DBL RDF XP U2 F' U' B2 U F U' B2 U' A9
+ULB DBL DFR XV L2 U L2 U R2 U' L2 U R2 U2 L2 Columns
+ULB DBL DLF XU U2 F2 U' B2 U F2 U' B2 U' A9
+ULB DBL DRB XW U2 R2 U L2 U' R2 U L2 U A9

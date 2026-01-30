@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="author" content="Roman Strakhov">
+    <meta name="theme-color" content="#eee" id='metaBarColor'>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="js/3rd_party/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/fa.min.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/3rd_party/jquery-3.3.1.min.js" ></script>
+    <script src="js/3rd_party/popper.min.js"></script>
+    <script src="js/3rd_party/bootstrap.min.js"></script>
+
+    <!-- 3rd party js -->
+    <script src='js/3rd_party/bootstrap-input-spinner.js'> </script>
+    <script src='js/3rd_party/darkreader.js'> </script>
+
+    <!-- custom scripts and styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css?v02">
+    <script src='js/saveload.js?v08'> </script>
+    <script src='js/init.js?v08'> </script>
+    <script src='js/glob.js?v08'> </script>
+    <script src='js/helpers.js?v08'> </script>
+    <script src='js/dicts.js?v08'> </script>
+    <script src='js/wordtree.js?v08'> </script>
+    <script src='js/layouts.js?v08'> </script>
+    <script src='js/gameplay.js?v08'> </script>
+    <script src='js/ailevels.js?v08'> </script>
+    <script src='js/scrabblealgs.js?v08'> </script>
+    <script src='js/analyzer.js?v08'> </script>
+    <script src='js/htmlelements.js?v08'> </script>
+    <script src='js/texts.js?v08'> </script>
+
+    <title>Balda</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href='#'>
+        <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span id='titleWord'>Balda</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id='loNewGame'>New game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='loStartAnalyzer'>Board analyzer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='loAiAi'>AI vs. AI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='menuNightmode'>Night mode</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<div id="mainLayWrap" class='container'>
+    <div id='mainLayout' class='centered'>
+    </div>
+</div>
+
+</body>
+</html>

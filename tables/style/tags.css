@@ -1,0 +1,84 @@
+﻿.tags{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.tags li, .tags span, .tags a{
+    float:left;
+    height:24px;
+    line-height:24px;
+    font-size:11px;
+    position:relative;
+}
+
+.tags a{
+    margin-left:20px;
+    padding:0 10px 0 12px;
+    color:#fff;
+    text-decoration:none;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-top-right-radius:4px;
+    background:#0089e0;
+}
+
+
+
+.tags a:before{
+    content:"";
+    float:left;
+    top:0;
+    left:-12px;
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:12px 12px 12px 0;
+    position:absolute;
+    border-color:transparent #0089e0 transparent transparent;
+}
+
+.tags a:after{
+    position:absolute;
+    content:"";
+    top:10px;
+    left:0;
+    float:left;
+    width:4px;
+    height:4px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    background:#fff;
+    -moz-box-shadow:-1px -1px 2px #004977;
+    -webkit-box-shadow:-1px -1px 2px #004977;
+    box-shadow:-1px -1px 2px #004977;
+}
+
+.tags a:hover{background:#555;}
+
+.tags a:hover:before{border-color:transparent #555 transparent transparent;}
+
+.bluetag a{
+    background:#0000ff;
+}
+.bluetag a:before{
+    border-color:transparent #0000ff transparent transparent;
+}
+
+/*tags by elements*/
+.xtag a{                background:#1abc9c; }
+.xtag a:before{ border-right-color:#1abc9c;}
+.ttag a{                background:#2ecc71; }
+.ttag a:before{ border-right-color:#2ecc71;}
+.wtag a{                background:#3498db; }
+.wtag a:before{ border-right-color:#3498db;}
+.etag a{                background:#34495e; }
+.etag a:before{ border-right-color:#34495e;}
+.ctag a{                background:#9b59b6; }
+.ctag a:before{ border-right-color:#9b59b6;}
+.dtag a{                background:#7f8c8d; }
+.dtag a:before{ border-right-color:#7f8c8d;}

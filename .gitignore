@@ -1,0 +1,17 @@
+# Default .gitignore content
+# IDE
+.idea
+.vscode
+.ccls-cache
+
+# build
+[Bb]uild
+cmake-build-*/
+
+# tmp files
+*~
+.DS_Store
+
+# vim
+[._]*.sw[a-p]
+

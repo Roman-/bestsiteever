@@ -1,0 +1,353 @@
+Most people organize comms in alphabetical order. My list is a bit different because i organized each case by the number of moves required to optimally solve it. I think this makes it easier to learn big chunks at once, since all the comms in each group are related.
+
+I think these algs are pretty good, please tell me if you see something slow. And of course if there's a mistake
+
+Buffers I use
+
+corners: UBL
+
+All letter pairs are in Speffz
+
+
+[SPOILER="Corners"]
+[SPOILER="8"]
+U face interchange
+BL [U, R D2 R']
+BH [U, R D' R']
+or [L' D' L, U']
+BO [U, R D R']
+or [L' D L, U']
+BK [L' D2 L, U']
+
+HD [U, L' D' L]
+KD [U, L' D2 L]
+OD [U, L' D L]
+
+CG [U2, R' D R]
+CP [U2, R' D' R]
+CS [U2, R' D2 R]
+
+CO [L' D L, U2]
+CK [L' D2 L, U2]
+CH [L' D' L, U2]
+
+PD [L D' L', U']
+TD [L D2 L', U']
+GD [L D L', U']
+
+L face interchange
+VS [L, U R2 U']
+TS [L, U R' U']
+or [z' [R' U' R, D']]
+NS [L, U R U']
+or [z' [R' U R, D']]
+MS [z' [R' U2 R, D']]
+
+TI [L', U R' U']
+VI [L', U R2 U']
+NI [L', U R U']
+
+JI [U' R' U, L]
+PI [U' R U, L]
+OI [U' R2 U, L]
+
+JU [z':[R U' R', D2]]
+PU [z':[R U R', D2]]
+BU [z':[R U2 R', D2]]
+
+NU [z:[U2, R D R']]
+VU [z:[U2, R D2 R']]
+TU [z:[U2, R D' R']]
+
+D face interchange
+
+PT [D, R' U R]
+LT [D2, R' U R]
+HT [D', R' U R]
+or [L U L', D]
+HP [L U L', D2]
+HL [L U L', D']
+
+KO [R U2 R', D']
+KG [R U2 R', D]
+KS [R U2 R', D2]
+
+R face interchange
+
+ON [R', U' L' U]
+or [z' R D' R', U]
+OM [z' R D' R', U2]
+OP [z' R D' R', U']
+PN [R2, U' L' U]
+MN [R, U' L' U]
+
+VB [z':[R' D2 R, U2]]
+VT [z':[R' D2 R, U]]
+VJ [z':[R' D2 R, U']]
+
+A9s
+NJ [R:[R D R', U]]
+or [x':[L D' L, U]] or [x':[U', R' D' R]]
+HJ [R:[R D' R', U]] or [L':[D, L' U L]]
+or [x':[L D' L, U']] or [z' x:[R U2 R', D]]
+LJ [R:[R D2 R', U]]
+[z' x:[R' D R, U2]]
+WJ [z' R':[R' D2 R, U']]
+or [x':[L D' L', U2]]
+
+MD [L:[L D L', U]]
+or [x':[R U' R', D]] or [x':[D', L' U' L]]
+MV [L:[L D' L', U]] or [R:[D, R' U R]]
+or [x':[R U' R', D']] or [z' x':[D, R U2 R']]
+MW [L:[L D2 L', U]]
+or [z' x:[R' U R, D2]]
+MU [z' l:[D, R U2 R']]
+[z' D:[R' U2 R, D2]]
+
+HG [z' R':[R' U R, D']]
+or [z x':[R' D R, U']] or [z x':[L D L', U]]
+NG [z' R':[R' U' R, D']] or [z R D':[R U' R']]
+[z x':[R' D R, U]] or [x:[D', R' U2 R]]
+MG [z' R':[R' U2 R, D']]
+[x':[R U' R', D2]]
+WG [R:[R U2 R', D]]
+[z x':[R' D R, U2]]
+
+LI [z R':[R' D' R, U']]
+[z' x:[R' D R, U']] or [z' x:[L D L', U']]
+LK [z R':[R' D R, U']] or [z' R:[U', R D' R']]
+[z' x:[R' D R, U]] or [x:[U', R' D2 R]]
+LW [z R':[R' D2 R, U']]
+LC [l':[U', R' D2 R]]
+[U':[R D2 R', U2]]
+
+IH [U:[U R U', L]]
+[z x':[U', R' D' R]] or [z' x:[R U' R', D]]
+VH [L:[U', L D' L']] or [R':[R' U R, D']]
+[z x':[U', R' D2 R]] or [x':[L' D L, U]]
+
+DN [L:[L' D' L, U']]
+[x:[R' U R, D]] or [x:[L U L', D]]
+KN [z' R:[R D' R', U]] or [z R':[U, R' D R]]
+[x:[D, L U2 L']] or [z x:[L U' L', D']]
+
+TC [r':[L' D2 L, U']]
+or [U:[L D2 L', U2]]
+OU [z l:[R D2 R', U]]
+or [z' U':[R' D2 R, U2]]
+
+B9s
+SJ [z' D':[D', R U' R']] or [z' D:[L' U' L, D]]
+BP [U:[U, R' D' R]] or [U':[U', L D' L']]
+MP [z' U':[U', R D' R']] or [z D:[R' U' R, D]]
+BG [U:[U, R' D R]] or [U':[L D L', U']]
+LP [D:[D, R' U R]] or [D':[L U L', D']]
+PS [z U:[U, R' D R]] or [z' D':[R U R', D']]
+
+LD [U:[U, R D2 R']] or z F' L' F l' U' L U l z'
+DS [U':[U', R' D2 R]] or z l' U' L U l F' L' F z'
+SG [D:[D, R U2 R']] or z r U R' U' r' F R F' z'
+IB r U R' U' r' F R F' or [z' D:[D, R U2 R']]
+MI F R F' r U R' U' r' or [z D':[D', R' U2 R]]
+BJ l' U' L U l F' L' F or [z' U':[U', R' D2 R]]
+
+JT [F' L F, R2] or [z' U':[R' D2 R, U2]]
+GO [D:[R U2 R', D2]] or [z:[F R' F, L2]]
+
+OS [D:[D, R U2 R']]
+[z U:[U, R' D2 R]]
+BS [U:[U, R' D2 R]]
+[L:[L, F R' F']]
+TB [U':[U', L D2 L']]
+[R':[R', F' L F]]
+
+11 moves
+
+VG [R2 U:[U, R' D R]]
+[L2 D':[L U L', D']]
+VN [R2 U:[U, R' D' R]]
+[L2 D':[L U' L', D']]
+LN [R2 D:[D, R' U R]]
+[L2 U':[L D L', U']]
+MH [z' R2 U':[U', R D' R']] or [x:[L' U2 L, D]]
+[z:[R2 U:[U, R' D' R]]
+HK [z' R2 D':[D', R U R']] or [x:[D', L U2 L']]
+[z R2 D:[D, R' U R]]
+KJ [z' R2 D':[D', R U' R']] or [x:[R' D2 R, U]]
+[z R2 D:[D, R' U' R]]
+
+13 moves
+KW [D' R2 U:[U, R' D R]]
+[]
+KI [U R2 U:[U, R' D' R]]
+[]
+DV [z' D' R2 D':[D', R U R']]
+[]
+WV [z' U R2 D':[D', R U' R']]
+[]
+DW [z' D R2 D:[R' U' R, D]]
+[]
+WI [U' R2 U':[R D R', U']]
+[]
+[/SPOILER]
+[SPOILER="9"]
+QL [[l:[U2, R D' R']]
+[R' U:[R D2 R', U2]]
+QT [l:[U2, R D R']]
+QI [l:[U2, R D2 R']]
+QP [r':[L' D L, U2]]
+[R' U:[R D R', U2]]
+QH [r':[L' D' L, U2]]
+[R' U:[R D' R', U2]]
+QC [r':[L' D2 L, U2]]
+QV [L:[L D' L', U2]
+QD [L:[L D L', U2]
+QW [L:[L D2 L', U2]
+QG [R':[U2, R' D R]
+QM [R':[U2, R' D' R]
+QS [R':[U2, R' D2 R]
+
+OF [z U' R':[R' D2 R, U2]]
+[U' r:[U2, L D' L']] or [U l:[U2, R D R']]
+[U' R U:[R' D' R, U2]]
+GF [z U' R':[R' D' R, U2]] or [z' D R':[R' U' R, D2]]
+[U' r:[U2, L D L']] or [U l:[U2, R D' R']]
+[U' R U:[R' D R, U2]]
+NF [z' D R':[R' U R, D2]]
+[U' l':[R' D2 R, U2]] or [U r':[L' D2 L, U2]]
+[
+VF [U' L':[U2, L' D2 L]]
+[z U' l:[R D' R', U2]] or [z' D l:[R U R', D2]]
+BF [U' L':[U2, L' D' L]] or [U R':[U 2, R' D'
+[z U' l:[R D R', U2]] or [z D l:[R U' R', D2]]
+UF [U R':[U2, R' D R]]
+[z U l':[U2, R' D2 R]] or [z' D' l':[D2, R' U2 R]]
+KF [z U R:[U2, R D2 R']]
+[U' l':[R' D' R, U2]] or [U r':[L' D L, U2]]
+SF [z U R:[U2, R D R']] or [z' D' R:[D2, R U R']]
+[U' l':[R' D R, U2]] or [U r':[L' D' L, U2]]
+[U' R U:[R' D2 R, U2]]
+CF [z' D' R:[D2, R U' R']]
+[U l:[U2, R D2 R']] or [U' r:[U2, L D2 L']]
+TF [U L:[L D2 L', U2]]
+[z U l':[U2, R' D R]] or [z' D' l':[D2, R' U' R]]
+JF [U L:[L D L', U2]] or [U' R:[R D R', U2]]
+[z U l':[U2, R' D' R]] or [z' D' l':[D2, R' U R]]
+HF [U' R:[R D' R', U2]]
+[z U' l:[R D2 R', U2]] or [z' D l:[R U2 R', D2]]
+
+XI [z R':[R' D' R, U2]]
+XK [z R':[R' D R, U2]]
+XW [z R':[R' D2 R, U2]]
+XL [z' R:[D2, R U R']]
+XJ [z' R:[D2, R U' R']]
+XB[z' R:[D2, R U2 R']]
+XN [z l:[R D R', U2]]
+XP [z l:[R D' R', U2]]
+XU [z l:[R D2 R', U2]]
+XO [z' l':[D2, R' U' R]]
+XM[z' l':[D2, R' U R]]
+XD [z' l':[D2, R' U2 R]]
+
+IC [l':[U2, R' D2 R]]
+IG [z R:[R D R', U2]]
+DJ [L':[L' D' L, U2]]
+DU [z' l:[D2, R U2 R']]
+PJ [z' l':[R' D R, U2]]
+PG [l:[R U' R', D2]]
+HU [D R':[D2, R' U R]]
+HO [r:[L U L', D2]]
+VL [R':[R' U R, D2]]
+
+mirrors of above algs
+NC [z' U' R:[U2, R D' R']]
+[U' l:[U2, R D2 R']] or [U r:[U2, L D2 L']]
+NT [z l':[R' U' R, D2]]
+BM [U R:[R D R', U2]] or [U' L:[U2, L D L']]
+[z D l':[D2, R' U' R]] or [z' U' l':[U2, R' D R]]
+BW [z' R':[U2, R' D2 R]]
+KM [z' R:[R D' R', U2]]
+KT [z' U' R':[R' D2 R, U2]]
+[D' R:[D2, R U' R']] or [D r:[D2, L U L']
+SW [R:[D2, R U2 R']]
+SL [z U R':[R' D' R, U2]] or [z' D' R':[R' U' R, D2]]
+[D l:[D2: R U' R']] or [D' r:[D2, L U L']]
+VO [D R:[R U2 R', D2]]
+[z' U l':[U2, R' D R]] or [z D' l':[D2, R' U' R]]
+
+A perms from different angles
+CB A perm [l':[R' D2 R, U]]
+DC A perm from the back [r':[L' D2 L, U]]
+BD lefty A perm [r:[L D2 L', U']]
+
+WH [z' R':[R' D2 R, U]] or [L:[U', L D2 L']]
+WN [R:[R U2 R', D']] or [z R':[U, R' D2 R]]
+HN [z R:[R U2 R', D']] or [L':[D, L' U2 L]
+
+IU [z l:[R D2 R', U']]
+US [z' l:[R U2 R', D']]
+SI [z l':[R' D2 R, U]
+[/SPOILER]
+[SPOILER="10"]
+orthogonals
+OJ [R U:[R' D' R, U]]
+or [z' R D':[D', R U' R']]
+MT [R' U:[R' D' R, U]]
+or [z' R' U':[U', R D' R']]
+
+GJ [R U:[R' D R, U]]
+[z' R' D':[R U' R', D']]
+GT [R' U:[R' D R, U]]
+[z' R' U:[R U R', D']]
+
+OL [R D:[R' U R, D]]
+[R D':[R U R', D']]
+ML [R' D:[R' U R, D]]
+[R U':[U', R D' R']]
+
+cyclic shifts
+QF [z' D' R:[R U2 R', D2]]
+XG [D' R:[R U2 R', D2]]
+
+FX [U R':[R' D2 R, U2]]
+JQ [z' U R':[U2, R' D2 R]]
+
+LF [U' R:[R D2 R, U2]]
+FM [z D R':[D2, R' U2 R]]
+
+OQ [D R':[R' D2 R, U2]] or [z U2 R:[R U' R', D2]] or [U2 L':[L' D L, U2]]
+XQ [z D2 R':[R' D R, U2]] or [D2 L:[U2, L D" L']] or [z U2 L':[L' D L, U2]]
+TX [U2 L':[L' U L, D2]] or [z' U2 R:[R U' R', D2]] or [D2 R':[D2, R' U R]]
+
+[/SPOILER]
+[SPOILER="11"]
+columns
+VX [z' U R:[R U' R', D2]]
+or [z' F' l':[R' U R, D2]]
+XC [z D' R':[R' D R, U2]]
+or [z F l:[R D' R', U2]]
+CV [z U' R':[R' U R, D2]]
+[F l:[R U' R', D2]]
+UK [U L:[L U' L', D2]]
+or [z' F' l':[R' D R, U2]]
+PW [z' U R:[R D' R', U2]]
+or [D' R':[D2, R' U R]]
+KQ [D' R':[R' D R, U2]]
+or [F l:[R D' R', U2]]
+PF [U L:[L D' L', U2]]
+or [z U' R':[R' D R, U2]]
+QU [D L:[L D' L', U2]]
+or[F' r':[L' D L, U2]]
+WF [z U R:[R D' R', U2]]
+or [U' L':[U2, L' D L]]
+[/SPOILER]
+[SPOILER="12"]
+per specials
+WC [R D' R':[R' D R, U2]]
+or [z' L' D L:[L D' L', U2]]
+WU [L' U' L':[L' U L, D2]]
+or [z' R U R:[R U' R', D2]]
+CU [L D' L':[L' D L, U2]]
+or [z R' D R:[R D' R', U2]]
+[/SPOILER]
+[/SPOILER]

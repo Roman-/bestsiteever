@@ -1,0 +1,90 @@
+function generatePdf() {
+    const orientation = Global.album ? 'landscape' : 'portrait';
+
+    var doc = new jsPDF(orientation, 'mm', "a4");
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+
+    // left-top corner of the page to start drawing
+    var x0 = (pageWidth - Global.badgeW * Global.badgeCols) / 2;
+    var y0 = (pageHeight - Global.badgeH * Global.badgeRows) / 2;
+
+    // add all fonts in use to VFS
+    Global.labels.forEach(function(label) {
+        if (label.font.base64 != null) {
+            var nameAndExt = label.font.name + '.' + label.font.ext;
+            doc.addFileToVFS(nameAndExt, label.font.base64);
+            doc.addFont(nameAndExt, label.font.name, 'normal');
+        }
+    });
+
+
+    const badgesPerPage = Global.badgeRows * Global.badgeCols;
+    const totalPages = Math.ceil((Global.csvLines.length)/badgesPerPage) + Global.badgeExtraPages;
+    const totalBadges = totalPages * badgesPerPage;
+    for (var csvItr = 0; csvItr < totalBadges; ) {
+        for (var j = 0; j < Global.badgeRows; j++) {
+            for (var i = 0; i < Global.badgeCols; i++) {
+
+                var x = x0 + i * Global.badgeW;
+                var y = y0 + j * Global.badgeH;
+
+                doc.addImage(Global.imgDataUrl, 'image/jpeg', x, y, Global.badgeW, Global.badgeH);
+
+                Global.labels.forEach(function(label) {
+                    if (label.visible && csvItr < Global.csvLines.length)
+                        drawLabel(doc, label, x, y, csvItr);
+                });
+                csvItr++;
+            }
+        }
+        if (csvItr < totalBadges)
+            doc.addPage();
+    }
+    // Output as Data URI
+    terminatePdf(doc);
+}
+
+function drawLabel(doc, label, x, y, csvItr) {
+    doc.setFont(label.font.name);
+    doc.setTextColor(label.color).setFontType(label.fontWeight);
+    var labelText = getLabelText(csvItr, label)
+    var lineNumber = 0, spaceIndex = labelText.indexOf(' ');
+    var parts = (label.multiline && (spaceIndex != -1)) ?
+        [labelText.substring(0, spaceIndex), labelText.substring(spaceIndex+1)] :
+        [labelText];
+    parts.forEach(function(namePart) {
+        var textSize = label.rect.height / Global.pt2mm;
+        var realTextWidth = doc.getStringUnitWidth(namePart) * textSize * Global.pt2mm;
+        const widthThreshold = 0.95; // if label is longer than 95% of the badge width, this is bad
+        var adjustedHeight = (realTextWidth > Global.badgeW * widthThreshold) ?
+            label.rect.height*(Global.badgeW / realTextWidth * widthThreshold) :
+            label.rect.height;
+        drawTextInRect(
+            doc, namePart, label.centered,
+            x + label.rect.x,
+            y + label.rect.y + label.rect.height + (lineNumber++) * (label.rect.height + Global.lineHeightProportion),
+            label.rect.width,
+            adjustedHeight);
+    });
+}
+
+function terminatePdf(doc) {
+    var pdfDataAttr = doc.output('datauristring');
+    $('#pdfFrame').attr('src', pdfDataAttr);
+    $('#donwloadPdf').unbind('click').click(function() {doc.save("Badges.pdf")});
+    setLayout(LayoutsEnum.pdf);
+}
+
+function drawTextInRect(doc, text, centered, x, y, rectWidth, rectHeight) {
+    // adjust Text size based on rectWidth
+    var textSize = rectHeight / Global.pt2mm;
+    doc.setFontSize(textSize);
+
+    var realTextWidth = doc.getStringUnitWidth(text) * textSize * Global.pt2mm;
+
+    if (centered)
+        x -= (realTextWidth - rectWidth)/2;
+
+    doc.text(x, y ,text);
+}

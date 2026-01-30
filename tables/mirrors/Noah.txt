@@ -1,0 +1,1010 @@
+I'll eventually have all my corner cycles and edge cycles here. I'm mostly doing this for myself so that I can force myself to find my bad cycles, but I think it might be useful for other people to see as well. Feel free to tell me better or just different algs for certain cycles. I'm sorry that this has to be in my letter scheme, but I just hate writing out UBL etc. so you'll just have to refer to the key.
+
+One more note: A lot of these algs can be performed from two or more different angles. Even though I may use both angles for an alg, I only wrote one for each. If you think a cycle is awkward in a certain angle, try it from other angles.
+
+Also, I highly recommend only using this list as a reference guide for commutators you can't find a good alg for. Look for a good alg for a case first, and see if you can find one you like. If you do, it will be easier to remember, and if you don't you can look here.
+
+[SPOILER=Corners]
+
+[SPOILER=Key]
+Buffer: UBL (A)
+UBR = B
+UFR = C
+UFL = D
+LUF = F
+LFD = G
+LBD = H
+FUL = I
+FUR = J
+FDR = K
+FDL = L
+RUF = M
+RUB = N
+RDB = O
+RDF = P
+BUR = Q
+BDL = S
+BDR = T
+DFL = U
+DFR = V
+DBR = W
+DBL = X
+[/SPOILER]
+
+[SPOILER=B]
+C - [R' ; [F , R' B2 R]] (9)
+D - [y R' ; [F , R' B2 R]] (9)
+F - [y R' ; [U2 , R' D' R]] (9)
+G - [y ; [U , R' D2 R]] (8)
+H - [U , R D' R'] (8)
+I - [x ; [U R' U' , L]] = x U R' U' L U R U' r' (8)
+J - [x' z ; [R U R' , D] (8)
+K - [L' D2 L , U'] (8)
+L - [U , R D2 R'] (8)
+M - [y R ; [R D R' , U2]] (9)
+O - [U , R D R'] (8)
+P - [y ; [R D2 R' , U']] (8)
+S - [y ; [R D R' , U']] (8)
+T - [y ; [U , R' D' R]] (8)
+U - [z' ; [R U2 R' , D2]] (8)
+V - [z' ; [U2 , R' D2 R]] (8)
+W - [z' R' ; [U2 , R' D2 R]] (9)
+X - [z' R ; [R U2 R' , D2]] (9)
+[/SPOILER]
+
+[SPOILER=C]
+B - [y x' R ; [U' , R D2 R']] (9)
+D - [R' ; [U , L' D2 L]] (10)
+F - [F ; [R' D' R , U2]] (10)
+G - [U2 , R' D R] (8)
+H - [L' D' L , U2] (8)
+I - [x R' ; [R' D2 R , U2]] (9)
+K - [L' D2 L , U2] (8)
+L - [y ; [R D' R' , U2]] (8)
+N - [F ; [R2 , U' L' U]] (10)
+O - [L' D L , U2] (8)
+P - [U2 , R' D' R] (8)
+Q - [R' ; [U2 , L' D2 L]] (10)
+S - [U2 , R' D2 R] (8)
+T - [y' [U2 , R D' R']] (8)
+U - [D ; [U2 , R' F' R2 F R]] (14)
+V - [U2 , R' F' R2 F R] (12)
+W - [D' ; [U2 , R' F' R2 F R]] (14)
+X - [D2 ; [U2 , R' F' R2 F R]] (14)
+[/SPOILER]
+
+[SPOILER=D]
+B - [R ; [U' , L D2 L']] (10)
+C - [y' x' R ; [U' , R D2 R']] (9)
+G - [U' , L D L'] (8)
+H - [L' D' L , U] (8)
+J - [L' ; [L' D' L , U2]] (9)
+K - [L' D2 L , U] (8)
+L - [y ; [R D' R' , U]] (8)
+M - [x ; [D , R U' R']] (8)
+N - [x' z' ; [U' R U , L']] (8)
+O - [y' ; [U' , R' D2 R]] (8)
+P - [y ; [R D2 R' , U] (8)
+Q - [R2 ; [L' D2 L , U] (10)
+S - [y ; [R D R' , U]] (8)
+T - [U , L D2 L'] (8)
+U - [x' y R ; [D2 , R U2 R']] (9)
+V - [x' y' ; [D2 , R U2 R']] (8)
+W - [x' y' ; [R' D2 R , U2]] (8)
+X - [x' y' R' ; [R' D2 R , U2]] (9)
+[/SPOILER]
+
+[SPOILER=F]
+B - [y R' ; [R' D' R , U2]] (9)
+C - [x' U2 ; [R2 , U' L2 U]] (9)
+G - [x z R' ; [U2 , R' D' R]] (9)
+H - [y' R ; [U2 , R D2 R']] (9)
+J - [y' R ; [U2 , R D R']] (9)
+K - [y L ; [R D' R' , U2]] (10)
+L - [x U R' ; [R' D2 R , U2]] (13)
+M - [F ; [U2 , R' F' R2 F R]] (14)
+N - [x z R' ; [U2 , R' D2 R] (9)
+O - [x z R' ; [U2 , R' D R] (9)
+P - [x' y' ; [R2' U R2 U' R2' , D2]] (12)
+Q -[R' F ; [U2 , R' D' R]] (12)
+S - [x' z R ; [R D R' , U2]] (9)
+T - [y' R ; [U2 , R D' R']] (9)
+U - [z x' U2 ; [L2 , U R2 U']] (9)
+V - [F ; [U2 , R' D R]] (10)
+W - [x' y' ; [U2 , R' F' R2 F R]] (12)
+X - [z R' ; [U2 , R' F' R2 F R]] (13)
+[/SPOILER]
+
+[SPOILER=G]
+B - [y ; [R' D2 R , U]] (8)
+C - [R' D R , U2] (8)
+D - [L D L' , U'] (8)
+F - [x z R' ; [R' D' R , U2]] (9)
+H - [z x' ; [U' , R' D R]] (8)
+I - [z R ; [U2 , R D R']] (9)
+J - [D x ; [R' D2 R , U]] (10)
+K - [D , R U2 R'] (8)
+M - [x ; [D2 , R U' R']] (8)
+N - [x ; [R' U2 R , D']] (8)
+O - [y' [R U' R' , D2]] (8)
+P - [L ; [D2 , R U' R']] (10)
+Q - [R2 ; [D , R U2 R']] (9)
+S - [y' ; [R U' R' , D]] (8)
+T - [R' y ; [R' D2 R , U]] (10)
+V - [z' x' ; [D' , R U2 R']] (8)
+W - [R ; [D , R U2 R']] (9)
+X - [z' R ; [R2 U R2 U' R2 , D2]] (13)
+[/SPOILER]
+
+[SPOILER=H]
+B - [U , R D' R'] (8)
+C - [U2 , L' D' L] (8)
+D - [U , L' D' L] (8)
+F - [y' R ; [R D2 R' , U2]] (9)
+G - [z x' ; [R' D R , U']] (8)
+I - [y' ; [U' R' U , L']] (8)
+J - [x' ; [L D' L' , U']] (8)
+K - [x' ; [L D2 L' , U']] (8)
+L - [L U L' , D'] (8)
+M - [x ; [L' U2 L , D]] (8)
+N - [L' ; [D , L' U2 L]] (9)
+O - [R ; [L U L' , D2]] (10)
+P - [L U L' , D2] (8)
+Q - [R' ; [U2 , L' D' L]] (10)
+T - [D' , R' U R] (8)
+U - [y' R' ; [D2 , R' U2 R]] (9)
+V - [y' ; [U' R2 U , L']] (8)
+W - [L ; [L D2 L' , U']] (9)
+[/SPOILER]
+
+[SPOILER=I]
+B - [x ; [L , U R' U']] (8)
+C - [x R' ; [U2 , R' D2 R]] (9)
+G - [z R ; [R D R' , U2]] (9)
+H - [y' ; [L' , U' R' U]] (8)
+J - [x' y' ; [R U R' , D']] (8)
+K - [x ; [U2 , R' D2 R]] (8)
+L - [x' y' ; [R U R' , D]] (8)
+M - [x' ; [U' R U , L']] (8)
+N - [U R U' , L'] (8)
+O - [L , U' R2 U] (8)
+P - [L , U' R U] (8)
+Q - [x R2 [U2 , R' D2 R]] (9)
+S - [z R' ; [F , R' B2 R]] (9)
+T - [U R' U' , L'] (8)
+U - [y' R' ; [D , R' U2 R]] (9)
+V - [U R2 U' , L'] (8)
+W - [x ; [R U2 R' , D2]] (8)
+X - [U' ; [L2 , U' R' U]] (9)
+[/SPOILER]
+
+[SPOILER=J]
+B - [x' z ; [D , R U R']] (8)
+D - [L' ; [L' D' L , U2]] (9)
+F - [y' R ; [R D R' , U2]] (9)
+G - [D x ; [U , R' D2 R]] (10)
+H - [x' ; [U' , L D' L']] (8)
+I - [x' y' ; [D' , R U R']] (8)
+K - [x ; [U , R' D2 R]] (8)
+L - [x y' ; [U2 , R' D R]] (8)
+N - [R ; [U , R D R']] (9) OR [x' ; [U , L D' L']] (8)
+O - [D' x ; [U , R' D2 R]] (10)
+P - [z' L' ; [U2 , R' D R]] (10)
+Q - [R' ; [R' F' R2 F R , U2]] (13)
+S - [x' ; [U R2 U' , L']] (8)
+T - [x ; [U' L U , R2]] (8)
+U - [z' ; [R U' R' , D2]] (8)
+V - [z' ; [U' , R' D2 R]] (8)
+W - [x' ; [U2 , L D' L']] (8)
+X - [z' R ; [R U' R' , D2]] (9)
+[/SPOILER]
+
+[SPOILER=K]
+B - [U' , L' D2 L] (8)
+C - [U2 , L' D2 L] (8)
+D - [U , L' D2 L]
+F - [y L ; [U2 , R D' R']] (10)
+G - [R U2 R' , D] (8)
+H - [x ; [D' , L U2 L']] (8)
+I - [x ; [R' D2 R , U2]] (8)
+J - [x ; [R' D2 R , U]] (8)
+L - [x ; [R' D2 R , U']] (8)
+M - [z' R ; [R D' R' , U2]] (9)
+N - [x ; [D , L U2 L']] (8) OR [z' R ; [R D' R' , U]] (9)
+O - [R U2 R' , D'] (8)
+Q - [x' z ; [D2 , R2 U R2 U' R2]] (12)
+S - [R U2 R' , D2] (8)
+T - [F ; [D2 , R' U R]] (10)
+U - [z' ; [R2 U R2 U' R2 , D2]] (12)
+W - [x ; [D2 , L U2 L']] (8)
+X - [U' ; [L2 , U' R U]] (9)
+[/SPOILER]
+
+[SPOILER=L]
+B - [R D2 R' , U] (8)
+C - [y ; [U2 , R D' R']] (8)
+D - [y' ; [R' D' R , U']] (8)
+F - [x U R' ;  [U2 , R' D2 R]] (11)
+H - [D' , L U L'] (8)
+I - [x' y' ; [D , R U R']] (8)
+J - [x y' ; [R' D R , U2]] (8)
+K - [x ; [U' , R' D2 R]] (8)
+M - [D x ; [U L2 U' , R']] (10)
+N - [x y ; [R U2 R' , D']] (8)
+O - [F' ; [R U2 R' , D']] (10)
+P - [y' ; [D , R' U2 R]] (8)
+Q - [x R2 ; [U' , R' D2 R]] (9)
+S - [F' ; [R U2 R' , D2]] (10)
+T - [D2 , R' U R] (8)
+V - [R' ; [D2 , R' U R]] (9)
+W - [x ; [R U' R' , D2]] (8)
+X - [z'  R ; [R U R' , D2]] (9)
+[/SPOILER]
+
+[SPOILER=M]
+B - [y R ; [U2 , R D R']] (9)
+D - [x' ; [R U' R' , D]] (8)
+F - [F ; [R' F' R2 F R , U2]] (14)
+G - [x' ; [R U' R' , D2]] (8)
+H - [x ; [L' U2 L , D]] (8)
+I - [x' ; [L' , U' R U]] (8)
+K - [z' R ; [U2 , R D' R']] (9)
+L - [D x ; [R' , U L2 U']] (10)
+N - [R , U' L' U] (8)
+O - [z' ; [U2 , R D' R']] (8) OR [R ; [U' L' U , R2]] (9)
+P - [x ; [R' , U L2 U']] (8)
+Q - [R2 ; [D' , R U2 R']] (9)
+S - [x' ; [L , U' R U]] (8)
+T - [D' x ; [R' , U L2 U']] (10)
+U - [x' ; [L2 , U' R U]] (8)
+V - [z' x' ; [D , R U2 R']] (8)
+W - [z' x' ; [R' D R , U2]] (8)
+X - [D x' ; [L2 , U' R U]] (10)
+[/SPOILER]
+
+[SPOILER=N]
+C - [z' y' R ; [U2 , R D2 R']] (9)
+D - [x' ; [U' , R' D R]] (8)
+F - [x z R' ; [R' D2 R , U2] (9)
+G - [x ; [D' , R' U2 R]] (8)
+H - [L' ; [L' U2 L , D]] (9)
+I - [U R U' , L']
+J - [R ; [R D R' , U]] (9) OR [x' ; [L D' L' , U]] (8)
+K - [x ; [L U2 L' , D]] (8)
+L - [D ; [U' L' U , R2]] (10)
+M - [U' L' U , R] (8)
+O - [U' L' U , R'] (8)
+P - [U' L' U , R2] (8)
+S - [L , U R U'] (8)
+T - [x' y' R' ; [R' D' R , U2]] (9)
+U - [U R U' , L2] (8)
+V - [y' ; [U' R2 U , L]] (8)
+W - [R ; [D' , R U2 R']] (9)
+X - [x' y' R ; [U2 , R D R']] (9)
+[/SPOILER]
+
+[SPOILER=O]
+B - [R D R' , U] (8)
+C - [U2 , L' D L] (8)
+D - [y' ; [R' D2 R , U']] (8)
+F - [y' x R2 ; [D , R U2 R']] (9)
+G - [y' ; [D2 , R U' R'] (8)
+H - [R ; [D2 , L U L']] (10)
+I - [U' R2 U , L] (8)
+J - [F ; [D' , R U2 R']] (10)
+K - [D' , R U2 R'] (8)
+L - [F' ; [D' , R U2 R']] (10)
+M - [z' ; [R D' R' , U2]] (8)
+N - [R' , U' L' U] (8)
+P - [x ; [R , U L2 U']] (8)
+Q - [x R' U ; [R2 , U L2 U']] (11)
+S - [D' ; [R U2 R' , D']] (9)
+U - [x ; [U' R U , L2]] (8)
+V - [y' R ; [D2 , R U' R']] (9)
+X - [R D ; [L2 , U R' U']] (12)
+[/SPOILER]
+
+[SPOILER=P]
+B - [y ; [U' , R D2 R']] (8)
+C - [R' D' R , U2] (8)
+D - [L D' L' , U'] (8) OR [y ; [U' , R D2 R']] (8)
+F - [x' y' ; [D2 , R2 U R2 U' R2]] (12)
+G - [L ; [R U' R' , D2] (10)
+H - [D2 , L U L'] (8)
+I - [U' R U , L] (8)
+J - [z' L' ; [R' D R , U2]] (10)
+L - [y' ; [R' U2 R , D]] (8)
+M - [x ; [U L2 U' , R']] (8)
+N - [R2 , U' L' U] (8)
+O - [x ; [U L2 U' , R]] (8)
+Q - [R' ; [U2 , L' D L]] (10)
+S - [x' ; [L , U' R2 U]] (8)
+T - [D , R' U R] (8)
+U - [x' ; [L2 , U' R2 U]] (8)
+W - [x ; [R2 U R2 U' R2 , D2]] (12)
+X - [D ; [L2 , U R' U']] (10)
+[/SPOILER]
+
+[SPOILER=Q]
+C - [R' ; [L' D2 L , U2]] (10)
+D - [R2 ; [U , L' D2 L]] (10)
+F - [R' F ; [R' D' R , U2]] (12)
+G - [R' ; [R' D R , U2]] (9)
+H - [R' ; [L' D' L , U2]] (10)
+I - [x R ; [D2 , R U2 R']] (9)
+J - [R' ; [U2 , R' F' R2 F R]] (13)
+K - [y x' ; [R2 U R2 U' R2 , D2]] (12)
+L - [x R ; [D2 , R U' R']] (9)
+M - [R' ; [U2 , R' D' R]] (9)
+O - [x R' U ; [U L2 U' , R2]] (11)
+P - [R' ; [L' D L , U2]] (10)
+S - [R' ; [U2 , R' D2 R]] (9)
+T - [x R ; [D2 , R U R']] (9)
+U - [y x' ; [U2 , R' F' R2 F R]] (12)
+V - [R2 ; [U' , L' D2 L]] (10)
+W - [R2 ; [U2 , L' D2 L]] (10)
+X - [U2 R ; [R D' R' , U2]] (11)
+[/SPOILER]
+
+[SPOILER=S]
+B - [y' ; [U' , R D R']] (8)
+C - [R' D2 R , U2] (8)
+D - [y' ; [U , R D R']] (8)
+F - [y x' R ; [U2 , R D R']] (9)
+G - [y' ; [D , R U' R']] (8)
+I - [y x2 R ; [U' , R D2 R']] (9)
+J - [x' ; [L' , U R2 U']] (8)
+K - [D2 , R U2 R'] (8)
+L - [F' ; [D2 , R U2 R']] (10)
+M - [x' ; [U' R U , L]] (8)
+N - [U R U' , L] (8)
+O - [D2 ; [R U2 R' , D]] (9)
+P - [x' ; [U' R2 U , L]] (8)
+Q - [R2 , [D2 , R U2 R']] (9)
+T - [U R' U' , L] (8)
+U - [y R' ; [R' D2 R , U]] (9)
+V - [U R2 U' , L] (8)
+W - [R ; [D2 , R U2 R']] (9)
+[/SPOILER]
+
+[SPOILER=T]
+B - [y ; [R' D' R , U]] (8)
+C - [y' ; [R D' R' , U2]] (8)
+D - [L D2 L' , U'] (8)
+F - [y' R ; [R D' R' , U2]] (9)
+G - [R' y ; [U , R' D2 R]] (10)
+H - [R' U R , D'] (8)
+I - [L' , U R' U'] (8)
+J - [x ; [R2 , U' L U]] (8)
+K - [F ; [R' U R , D2]] (10)
+L - [R' U R , D2] (8)
+M - [D' x ; [U L2 U' , R']] (10)
+N - [x' y' R' ; [U2 , R' D' R]] (9)
+P - [R' U R , D] (8)
+Q - [x R ; [R U R' , D2]] (9)
+S - [L , U R' U'] (8)
+U - [y' R' ; [D' , R' U2 R]] (9)
+V - [z' ; [U , R' D2 R]] (8)
+X - [y' D R' ; [D2 , R' U2 R]] (13)
+[/SPOILER]
+
+[SPOILER=U]
+B - [z' ; [D2 , R U2 R']] (8)
+C - [D ; [R' F' R2 F R , U2]] (14)
+D - [z' x' R ; [R U2 R' , D2]] (9)
+F - [x' y' U' ; [R2 , U' L2 U]](9)
+H - [y' R' ; [R' U2 R , D2]] (9)
+I - [z x' R ; [U' , R D2 R']] (9)
+J - [z' ; [D2 , R U' R']] (8)
+K - [z' ; [D2 , R2 U R2 U' R2]] (12)
+M - [x' ; [U' R U , L2]] (8)
+N - [U R U' , L2] (8)
+O - [x ; [L2 , U' R U]] (8)
+P - [x' ; [U' R2 U , L2]] (8)
+Q - [y x' ; [R' F' R2 F R , U2]] (12)
+S - [y R' ; [U , R' D2 R]] (9)
+T - [y' R' ; [R' U2 R , D']] (9)
+V - [U R2 R' , L2] (8)
+W - [y' U' ; [R2 U R2 U' R2 , D2]] (14)
+X - [D ; [L2 , U R2 R']] (10)
+[/SPOILER]
+
+[SPOILER=V]
+B - [z' ; [U2 , R' D2 R]] (8)
+C - [R' F' R2 F R , U2] (12)
+D - [z' x' ; [R U2 R' , D2]] (8)
+F - [F ; [R' D R , U2]] (10)
+G - [z' x' ; [R U2 R' , D']] (8)
+H - [y' ; [L' , U' R2 U]] (8)
+I - [L' , U R2 U'] (8)
+J - [z' ; [R' D2 R , U']] (8)
+L - [R2 ; [U , R D2 R'] (9)
+M - [z' x' ; [R U2 R' , D]] (8)
+N - [y' ; [L , U' R2 U]] (8)
+O - [y' R2 ; [U' , R' D2 R]] (9)
+Q - [R2 ; [L' D2 L , U']] (10)
+S - [L , U R2 U'] (8)
+T - [z' ; [R' D2 R , U]] (8)
+U - [L2 , U R2 U'] (8)
+W - [D' ; [U R2 U' , L2]] (10)
+X - [U2 ; [R2 U R2 U' R2 , D2]] (14)
+[/SPOILER]
+
+[SPOILER=W]
+B - [z' R' ; [R' D2 R , U2]] (9)
+C - [D' ; [R' F' R2 F R]] (14)
+D - [z' x' ; [U2 , R' D2 R]] (8)
+F - [x' y' ; [R' F' R2 F R , U2]] (12)
+G - [R ; [R U2 R' , D]] (9)
+H - [L ; [U' , L D2 L']] (9)
+I - [x ; [D2 , R U2 R']] (8)
+J - [x ; [L U' L' , D2]] (8)
+K - [x ; [L U2 L' , D2]] (8)
+L - [x ; [D2 , R U' R']] (8)
+M - [z' x' ; [U2 , R' D R]] (8)
+N - [R ; [R U2 R' , D']] (9)
+P - [x ; [D2 , R2 U R2 U' R2]] (12)
+Q - [R2 ; [L' D2 L , U2]] (10)
+S - [R ; [R U2 R' , D2]] (9)
+U - [y' U' ; [D2 , R2 U R2 U' R2]] (14)
+V - [D ; [L2 , U R2 U']] (10)
+X - [D2 ; [U R2 U' , L2]] (10)
+[/SPOILER]
+
+[SPOILER=X]
+B - [z' R ; [D2 , R U2 R']] (9)
+C - [D2 ; [R' F' R2 F R , U2]] (14)
+D - [x' y' R' ; [U2 , R' D2 R]] (9)
+F - [z R' ; [R' F' R2 F R , U2]] (13)
+G - [z' R ; [D2 , R2 U R2 U' R2]] (13)
+I - [U' ; [U' R' U , L2]] (9)
+J - [z' R ; [D2 , R U' R']] (9)
+K - [U' ; [U' R U . L2]] (9)
+L - [z' R ; [D2 , R U R']] (9)
+M - [D x' ; [U' R U , L2]] (10)
+N - [x' y' R ; [R D R' , U2]] (9)
+O - [R D ; [U R' U' , L2]] (12)
+P - [D ; [U R' U' , L2]] (10)
+Q - [U2 R ; [U2 , R D' R']] (11)
+T - [y' D R' ; [R' U2 R , D2]] (13)
+U - [D ; [U R2 R' , L2]] (10)
+V - [U2 ; [D2 , R2 U R2 U' R2]] (14)
+W - [D2 ; [L2 , U R2 U']] (10)
+[/SPOILER]
+[/SPOILER]
+
+[SPOILER=Edges]
+
+[SPOILER=Key]
+Buffer: DF (U)
+UB = A
+UR = B
+UF = C
+UL = D
+LU = E
+LF = F
+LD = G
+LB = H
+FU = I
+FR = J
+FL = L
+RU = M
+RB = N
+RD = O
+RF = P
+BU = Q
+BL = R
+BD = S
+BR = T
+DR = V
+DB = W
+DL = X
+[/SPOILER]
+
+[SPOILER=A]
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=B]
+A -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=C]
+A -
+B -
+D -
+E -
+F -
+G -
+H -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=D]
+A -
+B -
+C -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=E]
+A -
+B -
+C -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=F]
+A -
+B -
+C -
+D -
+E -
+G -
+H -
+I -
+J -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=G]
+A -
+B -
+C -
+D -
+E -
+F -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+[/SPOILER]
+
+[SPOILER=H]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=I]
+A -
+B -
+D -
+E -
+F -
+G -
+H -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=J]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+L -
+M -
+N -
+O - 
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=L]
+A -
+B -
+C -
+D -
+E -
+G -
+H -
+I -
+J -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=M]
+A -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=N]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+O -
+P -
+Q -
+R -
+S -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=O]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+P -
+Q -
+R -
+S -
+T -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=P]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+L -
+M -
+N -
+O - 
+Q -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=Q]
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+R -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=R]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+S -
+T -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=S]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+T -
+V - 
+X -
+[/SPOILER]
+
+[SPOILER=T]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+O -
+P -
+Q -
+R -
+S -
+V -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=V]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+P -
+Q -
+R -
+S -
+T -
+W -
+X -
+[/SPOILER]
+
+[SPOILER=W]
+A -
+B -
+C -
+D -
+E -
+F -
+G -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+T -
+V - 
+X -
+[/SPOILER]
+
+[SPOILER=X]
+A -
+B -
+C -
+D -
+E -
+F -
+H -
+I -
+J -
+L -
+M -
+N -
+O -
+P -
+Q -
+R -
+S -
+T -
+V -
+W -
+[/SPOILER]
+
+[/SPOILER]

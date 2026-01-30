@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" id='gamecolors' href="css/night.css?v21">
+<link rel="stylesheet" type="text/css" href="css/main.css?v21">
+<link rel="stylesheet" type="text/css" href="css/footer.css?v21">
+<link rel="stylesheet" type="text/css" href="css/fonts.css?v21">
+<link rel="stylesheet" type="text/css" href="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.css">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="theme-color" content="#C5E0E8" id='metaBarColor'>
+<meta name="description" content="Alias word explanation game!" />
+<meta name="keywords" content="Alias, the hat, words explanation, alias party, алиас, шляпа" />
+<meta name="author" content="Roman Strakhov">
+<title id='gameTitle'>Alias - the Word Explanation Game</title>
+
+
+<link rel="manifest" href="manifest.json">
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+<!-- scripts for alias -->
+<script type="text/javascript" src="js/global.js?v21"></script>
+<script type="text/javascript" src="js/locale.js?v21"></script>
+<script type="text/javascript" src="js/rules.js?v21"></script>
+<script type="text/javascript" src="js/helpers.js?v21"></script>
+<script type="text/javascript" src="js/layouts.js?v21"></script>
+<script type="text/javascript" src="js/wordsets.js?v21"></script>
+<script type="text/javascript" src="js/init.js?v21"></script>
+<script type="text/javascript" src="js/game.js?v21"></script>
+<script type="text/javascript" src="js/saveload.js?v21"></script>
+
+</head>
+<body>
+
+<div id='header'></div> <!-- header takes 15% height, position: fixed -->
+<div id='header-placeholder'></div> <!-- header placeholder on top of the content takes 15% height, position: relative -->
+
+<table id='selectDict'> </table> <!-- select dictionaries table (main menu, scrollable) -->
+<div id="pressToStart"></div> <!-- get ready layout (100% height, not scrollable) -->
+<div id="gameWordDiv"></div> <!-- game layout with displayed word (100% height, not scrollable) -->
+<div id="listLay"></div> <!-- list layout with guessed words (scrollable) -->
+<div id="helpLay">this text is help</div> <!-- help layout with rules (scrollable) -->
+
+<div id='footer-placeholder'></div> <!-- footer placeholder on bottom of the content takes 10% height, position: relative -->
+<div id='footer'></div> <!-- footer takes 10% height, position: fixed -->
+<div id='gameDurationMsg' onclick='changeDuration()'></div>
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+"	js/pll.js	/^    '>': '&gt;',$/;"	p	class:escapeHtml.map
+%	js/darkreader.js	/^    var hslUnits = { '%': 100, 'deg': 360, 'rad': 2 * Math.PI, 'turn': 1 };$/;"	p	class:hslUnits
+%	js/darkreader.js	/^    var rgbUnits = { '%': 100 };$/;"	p	class:rgbUnits
+&	js/pll.js	/^  var map = {$/;"	p	class:escapeHtml.map
+'	js/pll.js	/^    '"': '&quot;',$/;"	p	class:escapeHtml.map
+<	js/pll.js	/^    '&': '&amp;',$/;"	p	class:escapeHtml.map
+>	js/pll.js	/^    '<': '&lt;',$/;"	p	class:escapeHtml.map
+Aa	js/algsmap.js	/^var algs = {$/;"	p	class:algs
+Algs	qt/scrambles.cpp	/^Algs::Algs(const QString& filepath)$/;"	f	class:Algs
+Algs	qt/scrambles.h	/^class Algs$/;"	c
+BL	js/pll.js	/^	var aufs = {$/;"	p	class:moveBlock.aufs
+FILES_PROCESSING_H	qt/files_processing.h	2;"	d
+FilterMode	js/darkreader.js	/^    var FilterMode;$/;"	v
+INLINE_STYLE_ATTRS	js/darkreader.js	/^    var INLINE_STYLE_ATTRS = ['style', 'fill', 'stroke', 'bgcolor', 'color'];$/;"	v
+INLINE_STYLE_SELECTOR	js/darkreader.js	/^    var INLINE_STYLE_SELECTOR = INLINE_STYLE_ATTRS.map(function (attr) { return "[" + attr + "]"; }).join(', ');$/;"	v
+Matrix	js/darkreader.js	/^    var Matrix = {$/;"	v
+SCRAMBLES_H	qt/scrambles.h	2;"	d
+ThemeEngines	js/darkreader.js	/^    var ThemeEngines = {$/;"	v
+__assign	js/darkreader.js	/^    var __assign = function() {$/;"	f
+__awaiter	js/darkreader.js	/^    function __awaiter(thisArg, _arguments, P, generator) {$/;"	f	function:__assign
+__generator	js/darkreader.js	/^    function __generator(thisArg, body) {$/;"	f
+a	js/darkreader.js	/^                var a = h.length === 6 ? 1 : (parseInt(h.substring(6, 8), 16) \/ 255);$/;"	v
+add	js/darkreader.js	/^        function add(task) {$/;"	f	function:createAsyncTasksQueue
+adjustSize	js/pll.js	/^function adjustSize(item, inc)$/;"	f
+algClicked	js/pll.js	/^function algClicked(el)$/;"	f
+algs_	qt/scrambles.h	/^    QStringList algs_;$/;"	m	class:Algs
+allowStartTheTimer	js/pll.js	/^var allowStartTheTimer;$/;"	v
+allowed	js/pll.js	/^var allowed = true; \/\/ allowed var is for preventing auto-repeat when you hold a button$/;"	v
+analyzeImage	js/darkreader.js	/^    function analyzeImage(image) {$/;"	f
+applyColorMatrix	js/darkreader.js	/^    function applyColorMatrix(_a, matrix) {$/;"	f
+applyRotationForAlgorithm	js/pll.js	/^function applyRotationForAlgorithm(alg, rot)$/;"	f
+attempts	js/darkreader.js	/^        var attempts = 0;$/;"	v
+attributeFilter	js/darkreader.js	/^        var mutationObserverOptions = { childList: true, subtree: true, attributes: true, attributeFilter: ['rel'] };$/;"	p	class:watchForStyleChanges.mutationObserverOptions
+attributes	js/darkreader.js	/^        var mutationObserverOptions = { childList: true, subtree: true, attributes: true, attributeFilter: ['rel'] };$/;"	p	class:watchForStyleChanges.mutationObserverOptions
+attributes	js/darkreader.js	/^        var observerOptions = { attributes: true, childList: true, characterData: true };$/;"	p	class:manageStyle.observerOptions
+background-color	js/darkreader.js	/^    var overrides = {$/;"	p	class:overrides
+bgFetch	js/darkreader.js	/^    function bgFetch(request) {$/;"	f
+blockPositionByAuf	js/pll.js	/^function blockPositionByAuf(auf)$/;"	f
+brightness	js/darkreader.js	/^        mode: 1,$/;"	p	class:defaultTheme
+brightness	js/darkreader.js	/^        },$/;"	m	class:Matrix
+buildStyleSheet	js/darkreader.js	/^            function buildStyleSheet() {$/;"	f	function:render
+cancel	js/darkreader.js	/^        function cancel() {$/;"	f	function:createAsyncTasksQueue
+cancel	js/darkreader.js	/^        var cancel = function () {$/;"	f	function:throttle
+cancelRendering	js/darkreader.js	/^    var cancelRendering = function () {$/;"	f
+changeMetaThemeColor	js/darkreader.js	/^    function changeMetaThemeColor(meta, theme) {$/;"	f
+changeMetaThemeColorWhenAvailable	js/darkreader.js	/^    function changeMetaThemeColorWhenAvailable(theme) {$/;"	f
+characterData	js/darkreader.js	/^        var observerOptions = { attributes: true, childList: true, characterData: true };$/;"	p	class:manageStyle.observerOptions
+checkForUpdate	js/darkreader.js	/^            var checkForUpdate = function () {$/;"	f	function:subscribeToSheetChanges
+childList	js/darkreader.js	/^        var mutationObserverOptions = { childList: true, subtree: true, attributes: true, attributeFilter: ['rel'] };$/;"	p	class:watchForStyleChanges.mutationObserverOptions
+childList	js/darkreader.js	/^        var observerOptions = { attributes: true, childList: true, characterData: true };$/;"	p	class:manageStyle.observerOptions
+clamp	js/darkreader.js	/^    function clamp(x, min, max) {$/;"	f
+cleanDynamicThemeCache	js/darkreader.js	/^    function cleanDynamicThemeCache() {$/;"	f
+cleanFallbackStyle	js/darkreader.js	/^    function cleanFallbackStyle() {$/;"	f
+cleanModificationCache	js/darkreader.js	/^    function cleanModificationCache() {$/;"	f
+clearColorModificationCache	js/darkreader.js	/^    function clearColorModificationCache() {$/;"	f
+containsCSSImport	js/darkreader.js	/^        function containsCSSImport() {$/;"	f	function:manageStyle
+contrast	js/darkreader.js	/^        brightness: 100,$/;"	p	class:defaultTheme
+contrast	js/darkreader.js	/^        },$/;"	m	class:Matrix
+counter	js/darkreader.js	/^    var counter = 0;$/;"	v
+createAsyncTasksQueue	js/darkreader.js	/^    function createAsyncTasksQueue() {$/;"	f
+createCORSCopy	js/darkreader.js	/^    function createCORSCopy(srcElement, cssText) {$/;"	f
+createDynamicStyleOverrides	js/darkreader.js	/^    function createDynamicStyleOverrides() {$/;"	f
+createFilterMatrix	js/darkreader.js	/^    function createFilterMatrix(config) {$/;"	f
+createManager	js/darkreader.js	/^    function createManager(element) {$/;"	f
+createOrUpdateDynamicTheme	js/darkreader.js	/^    function createOrUpdateDynamicTheme(filterConfig, dynamicThemeFixes, iframe) {$/;"	f
+createOrUpdateStyle	js/darkreader.js	/^    function createOrUpdateStyle(className) {$/;"	f
+createStaticStyleOverrides	js/darkreader.js	/^    function createStaticStyleOverrides() {$/;"	f
+createTextStyle	js/darkreader.js	/^    function createTextStyle(config) {$/;"	f
+createThemeAndWatchForUpdates	js/darkreader.js	/^    function createThemeAndWatchForUpdates() {$/;"	f
+cssFilter	js/darkreader.js	/^    var ThemeEngines = {$/;"	p	class:ThemeEngines
+deg	js/darkreader.js	/^    var hslUnits = { '%': 100, 'deg': 360, 'rad': 2 * Math.PI, 'turn': 1 };$/;"	p	class:hslUnits
+destroy	js/darkreader.js	/^        function destroy() {$/;"	f
+details	js/darkreader.js	/^        function details() {$/;"	f	function:manageStyle
+didDocumentShowUp	js/darkreader.js	/^    var didDocumentShowUp = !document.hidden;$/;"	v
+disable	js/darkreader.js	/^    function disable() {$/;"	f
+displayTime	js/pll.js	/^function displayTime() {$/;"	f
+documentVisibilityListener	js/darkreader.js	/^        var alreadyWatching = Boolean(documentVisibilityListener);$/;"	f
+documentVisibilityListener	js/darkreader.js	/^    var documentVisibilityListener = null;$/;"	v
+dynamicTheme	js/darkreader.js	/^        staticTheme: 'staticTheme',$/;"	p	class:ThemeEngines
+e	js/pll.js	/^var e = document.getElementsByTagName("input");$/;"	v
+enable	js/darkreader.js	/^    function enable(themeOptions, fixes, isIFrame) {$/;"	f
+engine	js/darkreader.js	/^        textStroke: 0,$/;"	p	class:defaultTheme
+expand	js/darkreader.js	/^    function expand(nodes, selector) {$/;"	f
+filter	js/darkreader.js	/^    var filter = null;$/;"	v
+filterProps	js/darkreader.js	/^    var filterProps = ['brightness', 'contrast', 'grayscale', 'sepia', 'mode'];$/;"	v
+fixes	js/darkreader.js	/^    var fixes = null;$/;"	v
+fontFamily	js/darkreader.js	/^        useFont: false,$/;"	p	class:defaultTheme
+generateEmptyFiles	qt/main.cpp	/^void generateEmptyFiles()$/;"	f
+generatePllButton	js/pll.js	/^function generatePllButton(name)$/;"	f
+generateScramble	js/pll.js	/^function generateScramble()$/;"	f
+getAbsoluteURL	js/darkreader.js	/^    function getAbsoluteURL($base, $relative) {$/;"	f
+getAllManageableStyles	js/darkreader.js	/^    function getAllManageableStyles(nodes) {$/;"	f
+getAvailableAufs	js/pll.js	/^function getAvailableAufs()$/;"	f
+getAvailableBlockPos	js/pll.js	/^function getAvailableBlockPos()$/;"	f
+getBgImageModifier	js/darkreader.js	/^    function getBgImageModifier(prop, value, rule, isCancelled) {$/;"	f
+getBgImageValue_1	js/darkreader.js	/^            var getBgImageValue_1 = function (imageDetails, filter) {$/;"	f
+getCSSBaseBath	js/darkreader.js	/^    function getCSSBaseBath(url) {$/;"	f	function:getAbsoluteURL
+getCSSFilterValue	js/darkreader.js	/^    function getCSSFilterValue(config) {$/;"	f
+getCSSImportURL	js/darkreader.js	/^    function getCSSImportURL(importDeclaration) {$/;"	f
+getCSSURLValue	js/darkreader.js	/^    function getCSSURLValue(cssURL) {$/;"	f	function:getAbsoluteURL
+getColorByName	js/darkreader.js	/^    function getColorByName($color) {$/;"	f
+getColorModifier	js/darkreader.js	/^    function getColorModifier(prop, value) {$/;"	f
+getDuration	js/darkreader.js	/^    function getDuration(time) {$/;"	f
+getFilterKey	js/darkreader.js	/^        function getFilterKey(filter) {$/;"	f
+getFilteredImageDataURL	js/darkreader.js	/^    function getFilteredImageDataURL(_a, filter) {$/;"	f
+getGradientModifier_1	js/darkreader.js	/^            var getGradientModifier_1 = function (gradient) {$/;"	f	function:var
+getImageDataURL	js/darkreader.js	/^    function getImageDataURL(url) {$/;"	f
+getImageDetails	js/darkreader.js	/^    function getImageDetails(url) {$/;"	f
+getIndices	js/darkreader.js	/^            var getIndices = function (matches) {$/;"	f	function:var
+getInlineOverrideStyle	js/darkreader.js	/^    function getInlineOverrideStyle() {$/;"	f
+getInlineStyleCacheKey	js/darkreader.js	/^    function getInlineStyleCacheKey(el, theme) {$/;"	f
+getMatches	js/darkreader.js	/^    function getMatches(regex, input, group) {$/;"	f
+getModifiableCSSDeclaration	js/darkreader.js	/^    function getModifiableCSSDeclaration(property, value, rule, isCancelled) {$/;"	f
+getModifiedFallbackStyle	js/darkreader.js	/^    function getModifiedFallbackStyle(filter, _a) {$/;"	f
+getModifiedUserAgentStyle	js/darkreader.js	/^    function getModifiedUserAgentStyle(filter, isIFrame) {$/;"	f
+getNumbersFromString	js/darkreader.js	/^    function getNumbersFromString(str, splitter, range, units) {$/;"	f
+getOKResponse	js/darkreader.js	/^    function getOKResponse(url) {$/;"	f
+getReadyTimer	js/pll.js	/^function getReadyTimer() {$/;"	f
+getRulesAsync	js/darkreader.js	/^        function getRulesAsync() {$/;"	f	function:manageStyle
+getRulesSync	js/darkreader.js	/^        function getRulesSync() {$/;"	f	function:manageStyle
+getSVGFilterMatrixValue	js/darkreader.js	/^    function getSVGFilterMatrixValue(config) {$/;"	f
+getSelectedCasesArray	js/pll.js	/^function getSelectedCasesArray()$/;"	f
+getShadowModifier	js/darkreader.js	/^    function getShadowModifier(prop, value) {$/;"	f
+getSystemColor	js/darkreader.js	/^    function getSystemColor($color) {$/;"	f
+getURLHost	js/darkreader.js	/^    function getURLHost(url) {$/;"	f
+getURLModifier_1	js/darkreader.js	/^            var getURLModifier_1 = function (urlValue) {$/;"	f	function:getBgImageModifier
+gradientRegex	js/darkreader.js	/^    var gradientRegex = \/[\\-a-z]+gradient\\(([^\\(\\)]*(\\(([^\\(\\)]*(\\(.*?\\)))*[^\\(\\)]*\\))){0,15}[^\\(\\)]*\\)\/g;$/;"	v
+grayscale	js/darkreader.js	/^        contrast: 100,$/;"	p	class:defaultTheme
+grayscale	js/darkreader.js	/^        },$/;"	m	class:Matrix
+handleMutations	js/darkreader.js	/^        function handleMutations(mutations) {$/;"	f	function:watchForStyleChanges
+handleTouchEnd	js/pll.js	/^function handleTouchEnd() {$/;"	f
+handleTouchStart	js/pll.js	/^function handleTouchStart() {$/;"	f
+hasAufOrSetup	qt/scrambles.cpp	/^bool hasAufOrSetup(const QString& alg)$/;"	f
+hexMatch	js/darkreader.js	/^    var hexMatch = \/^#[0-9a-f]+$\/i;$/;"	v
+hslMatch	js/darkreader.js	/^    var hslMatch = \/^hsla?\\([^\\(\\)]+\\)$\/;$/;"	v
+hslRange	js/darkreader.js	/^    var hslRange = [360, 1, 1, 1];$/;"	v
+hslSplitter	js/darkreader.js	/^    var hslSplitter = \/hsla?|\\(|\\)|\\\/|,|\\s\/ig;$/;"	v
+hslToRGB	js/darkreader.js	/^    function hslToRGB(_a) {$/;"	f
+identity	js/darkreader.js	/^    var Matrix = {$/;"	m	class:Matrix
+index_1	js/darkreader.js	/^            var index_1 = 0;$/;"	v
+insertInversed	inverse_scramble.html	/^function insertInversed()$/;"	f
+inverseMove	qt/scrambles.cpp	/^QString inverseMove(const QString& move)$/;"	f
+inverse_scramble	inverse_scramble.html	/^function inverse_scramble(s)$/;"	f
+inverse_scramble	js/pll.js	/^function inverse_scramble(s)$/;"	f
+invertNHue	js/darkreader.js	/^        },$/;"	m	class:Matrix
+isCancelled	js/darkreader.js	/^        function isCancelled() {$/;"	f	function:manageStyle
+isCubeMove	qt/scrambles.cpp	/^bool isCubeMove(const QString& m)$/;"	f
+isDeepSelectorSupported	js/darkreader.js	/^    function isDeepSelectorSupported() {$/;"	f
+isFirefox	js/darkreader.js	/^    function isFirefox() {$/;"	f
+isIFrame	js/darkreader.js	/^    var isIFrame = null;$/;"	v
+isMacOS	js/darkreader.js	/^    function isMacOS() {$/;"	f
+isPageLoaded	js/darkreader.js	/^    function isPageLoaded() {$/;"	f
+iterateShadowNodes	js/darkreader.js	/^    function iterateShadowNodes(nodes, iterator) {$/;"	f
+kIrreducable	qt/scrambles.h	/^const int kIrreducable = 80; \/\/ can't do O(n^3) alg with that amount of strings$/;"	v
+kMaxNumberOutputAlgs	qt/scrambles.h	/^const int kMaxNumberOutputAlgs = 25;$/;"	v
+kOutputFileName	qt/main.cpp	/^const QString kOutputFileName = "Ab_Up";$/;"	v
+label	js/darkreader.js	/^        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;$/;"	p	class:__generator._
+lastPllCaseName	js/pll.js	/^var lastPllCaseName = "";$/;"	v
+lastScramble	js/pll.js	/^var lastScramble = "";$/;"	v
+levenshtein_distance	qt/scrambles.cpp	/^int levenshtein_distance(const QString &s1, const QString &s2)$/;"	f
+linkLoading	js/darkreader.js	/^    function linkLoading(link) {$/;"	f
+loadAsDataURL	js/darkreader.js	/^    function loadAsDataURL(url) {$/;"	f
+loadLocal	js/pll.js	/^function loadLocal(name, defaultValue) {$/;"	f
+loadPlls	js/pll.js	/^function loadPlls()$/;"	f
+loadPllsButtons	js/pll.js	/^function loadPllsButtons()$/;"	f
+loadText	js/darkreader.js	/^    function loadText(url) {$/;"	f
+loadingEnd	js/darkreader.js	/^        function loadingEnd() {$/;"	f	function:createManager
+loadingStart	js/darkreader.js	/^        function loadingStart() {$/;"	f	function:createManager
+loadingStylesCounter	js/darkreader.js	/^    var loadingStylesCounter = 0;$/;"	v
+m	js/darkreader.js	/^        var m = l - c \/ 2;$/;"	v
+main	qt/main.cpp	/^int main(int argc, char *argv[])$/;"	f
+manageStyle	js/darkreader.js	/^    function manageStyle(element, _a) {$/;"	f
+metaThemeColorName	js/darkreader.js	/^    var metaThemeColorName = 'theme-color';$/;"	v
+metaThemeColorSelector	js/darkreader.js	/^    var metaThemeColorSelector = "meta[name=\\"" + metaThemeColorName + "\\"]";$/;"	v
+mode	js/darkreader.js	/^    var defaultTheme = {$/;"	p	class:defaultTheme
+modifiers_1	js/darkreader.js	/^            var modifiers_1 = [];$/;"	v
+modifyBackgroundColor	js/darkreader.js	/^    function modifyBackgroundColor(rgb, filter) {$/;"	f
+modifyBgHSL	js/darkreader.js	/^    function modifyBgHSL(_a) {$/;"	f
+modifyBorderColor	js/darkreader.js	/^    function modifyBorderColor(rgb, filter) {$/;"	f
+modifyBorderHSL	js/darkreader.js	/^    function modifyBorderHSL(_a) {$/;"	f
+modifyColor	js/darkreader.js	/^    function modifyColor(rgb, theme) {$/;"	f
+modifyColorWithCache	js/darkreader.js	/^    function modifyColorWithCache(rgb, filter, modifyHSL) {$/;"	f
+modifyFgHSL	js/darkreader.js	/^    function modifyFgHSL(_a) {$/;"	f
+modifyForegroundColor	js/darkreader.js	/^    function modifyForegroundColor(rgb, filter) {$/;"	f
+modifyGradientColor	js/darkreader.js	/^    function modifyGradientColor(rgb, filter) {$/;"	f
+modifyLightModeHSL	js/darkreader.js	/^    function modifyLightModeHSL(_a) {$/;"	f
+modifyShadowColor	js/darkreader.js	/^    function modifyShadowColor(rgb, filter) {$/;"	f
+moveBlock	js/pll.js	/^function moveBlock(prevPos, desiredPos, alg)$/;"	f
+msToHumanReadable	js/pll.js	/^function msToHumanReadable(duration) {$/;"	f
+multiplyMatrices	js/darkreader.js	/^    function multiplyMatrices(m1, m2) {$/;"	f
+newAlg	js/pll.js	/^	var newAlg = applyRotationForAlgorithm(alg, rot);$/;"	v
+next	js/darkreader.js	/^        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;$/;"	p	class:return
+noopHSL	js/darkreader.js	/^    function noopHSL(hsl) {$/;"	f
+normalize	qt/scrambles.cpp	/^QString normalize(QString s)$/;"	f
+observer	js/darkreader.js	/^    var observer = null;$/;"	v
+observer$1	js/darkreader.js	/^    var observer$1 = null;$/;"	v
+observer$2	js/darkreader.js	/^    var observer$2 = null;$/;"	v
+onReadyStateChange	js/darkreader.js	/^    function onReadyStateChange() {$/;"	f
+overrideInlineStyle	js/darkreader.js	/^    function overrideInlineStyle(element, theme) {$/;"	f
+parse	js/darkreader.js	/^    function parse($color) {$/;"	f
+parseColorWithCache	js/darkreader.js	/^    function parseColorWithCache($color) {$/;"	f
+parseHSL	js/darkreader.js	/^    function parseHSL($hsl) {$/;"	f
+parseHex	js/darkreader.js	/^    function parseHex($hex) {$/;"	f
+parseRGB	js/darkreader.js	/^    function parseRGB($rgb) {$/;"	f
+parseURL	js/darkreader.js	/^    function parseURL(url) {$/;"	f
+pause	js/darkreader.js	/^        function pause() {$/;"	f
+prevFilterKey	js/darkreader.js	/^        var prevFilterKey = null;$/;"	v
+rad	js/darkreader.js	/^    var hslUnits = { '%': 100, 'deg': 360, 'rad': 2 * Math.PI, 'turn': 1 };$/;"	p	class:hslUnits
+randomElement	js/pll.js	/^function randomElement(arr)$/;"	f
+rebuildAsyncRule	js/darkreader.js	/^            function rebuildAsyncRule(key) {$/;"	f	function:render
+reduceNumberOfAlgs	qt/scrambles.cpp	/^void Algs::reduceNumberOfAlgs()$/;"	f	class:Algs
+reduceRandomly	qt/scrambles.cpp	/^void Algs::reduceRandomly()$/;"	f	class:Algs
+rejected	js/darkreader.js	/^            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }$/;"	f
+removeDynamicTheme	js/darkreader.js	/^    function removeDynamicTheme() {$/;"	f
+removeManager	js/darkreader.js	/^    function removeManager(element) {$/;"	f
+removeMiscChars	qt/scrambles.cpp	/^void removeMiscChars(QString& s)$/;"	f
+removeNode	js/darkreader.js	/^    function removeNode(node) {$/;"	f
+render	js/darkreader.js	/^        function render(filter, variables) {$/;"	f
+renderId	js/darkreader.js	/^        var renderId = 0;$/;"	v
+replaceAll	js/pll.js	/^function replaceAll(str,mapObj){$/;"	f
+replaceCSSFontFace	js/darkreader.js	/^    function replaceCSSFontFace($css) {$/;"	f
+replaceCSSImports	js/darkreader.js	/^    function replaceCSSImports(cssText, basePath) {$/;"	f
+replaceCSSRelativeURLsWithAbsolute	js/darkreader.js	/^    function replaceCSSRelativeURLsWithAbsolute($css, cssBasePath) {$/;"	f	function:getAbsoluteURL
+replaceCSSTemplates	js/darkreader.js	/^    function replaceCSSTemplates($cssText) {$/;"	f
+replaceCSSVariables	js/darkreader.js	/^    function replaceCSSVariables(value, variables) {$/;"	f
+resetDefaults	js/pll.js	/^function resetDefaults()$/;"	f
+restoreMetaThemeColor	js/darkreader.js	/^    function restoreMetaThemeColor() {$/;"	f
+rgbMatch	js/darkreader.js	/^    var rgbMatch = \/^rgba?\\([^\\(\\)]+\\)$\/;$/;"	v
+rgbRange	js/darkreader.js	/^    var rgbRange = [255, 255, 255, 1];$/;"	v
+rgbSplitter	js/darkreader.js	/^    var rgbSplitter = \/rgba?|\\(|\\)|\\\/|,|\\s\/ig;$/;"	v
+rgbToHSL	js/darkreader.js	/^    function rgbToHSL(_a) {$/;"	f
+rgbToHexString	js/darkreader.js	/^    function rgbToHexString(_a) {$/;"	f
+rgbToString	js/darkreader.js	/^    function rgbToString(rgb) {$/;"	f
+rulesCheckFrameId	js/darkreader.js	/^        var rulesCheckFrameId = null;$/;"	v
+rulesCount	js/darkreader.js	/^        var rulesCount = null;$/;"	v
+run	js/darkreader.js	/^        var run = function () {$/;"	f
+runDynamicStyle	js/darkreader.js	/^        function runDynamicStyle() {$/;"	f	function:createThemeAndWatchForUpdates
+runTasks	js/darkreader.js	/^        function runTasks() {$/;"	f	function:createAsyncTasksQueue
+runTimer	js/pll.js	/^function runTimer() {$/;"	f
+running	js/pll.js	/^var running = false; var waiting = false;$/;"	v
+s	js/darkreader.js	/^        var s = c \/ (1 - Math.abs(2 * l - 1));$/;"	v
+safeGetSheetRules	js/darkreader.js	/^        function safeGetSheetRules() {$/;"	f
+saveLocal	js/pll.js	/^function saveLocal(name, value) {$/;"	f
+savePlls	js/pll.js	/^function savePlls()$/;"	f
+scale	js/darkreader.js	/^    function scale(x, inLow, inHigh, outLow, outHigh) {$/;"	f
+selectAll	js/pll.js	/^function selectAll()$/;"	f
+selectCertainPlls	js/pll.js	/^function selectCertainPlls(namesArray)$/;"	f
+selectionKeys	js/pll.js	/^function selectionKeys() $/;"	f
+sent	js/darkreader.js	/^        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;$/;"	m	class:__generator._
+sepia	js/darkreader.js	/^        grayscale: 0,$/;"	p	class:defaultTheme
+sepia	js/darkreader.js	/^        },$/;"	m	class:Matrix
+setCustomProp	js/darkreader.js	/^        function setCustomProp(targetCSSProp, modifierCSSProp, cssVal) {$/;"	f	function:overrideInlineStyle
+setRule	js/darkreader.js	/^            function setRule(target, index, declarations) {$/;"	f	function:render
+setupStylePositionWatcher	js/darkreader.js	/^    function setupStylePositionWatcher(node, alias) {$/;"	f
+shouldManageStyle	js/darkreader.js	/^    function shouldManageStyle(element) {$/;"	f
+showScramble	js/pll.js	/^function showScramble()$/;"	f
+size	qt/scrambles.cpp	/^int Algs::size() const$/;"	f	class:Algs
+srcMetaThemeColor	js/darkreader.js	/^    var srcMetaThemeColor = null;$/;"	v
+start	js/darkreader.js	/^        var start = null;$/;"	v
+startMilliseconds	js/pll.js	/^var startMilliseconds, stopMiliseconds; \/\/ date and time when timer was started$/;"	v
+staticTheme	js/darkreader.js	/^        svgFilter: 'svgFilter',$/;"	p	class:ThemeEngines
+step	js/darkreader.js	/^            function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }$/;"	f
+stop	js/darkreader.js	/^        var stop = function () {$/;"	f
+stopStylePositionWatchers	js/darkreader.js	/^    function stopStylePositionWatchers() {$/;"	f
+stopTimer	js/pll.js	/^function stopTimer() {$/;"	f
+stopWatchingForDocumentVisibility	js/darkreader.js	/^    function stopWatchingForDocumentVisibility() {$/;"	f
+stopWatchingForInlineStyles	js/darkreader.js	/^    function stopWatchingForInlineStyles() {$/;"	f
+stopWatchingForStyleChanges	js/darkreader.js	/^    function stopWatchingForStyleChanges() {$/;"	f
+stopWatchingForUpdates	js/darkreader.js	/^    function stopWatchingForUpdates() {$/;"	f
+subscribeForShadowRootChanges	js/darkreader.js	/^        function subscribeForShadowRootChanges(node) {$/;"	f	function:watchForStyleChanges
+subscribeToSheetChanges	js/darkreader.js	/^        function subscribeToSheetChanges() {$/;"	f
+subtree	js/darkreader.js	/^        var mutationObserverOptions = { childList: true, subtree: true, attributes: true, attributeFilter: ['rel'] };$/;"	p	class:watchForStyleChanges.mutationObserverOptions
+surroundedWithDee	qt/scrambles.cpp	/^bool surroundedWithDee(const QString& alg)$/;"	f
+svgFilter	js/darkreader.js	/^        cssFilter: 'cssFilter',$/;"	p	class:ThemeEngines
+textStroke	js/darkreader.js	/^        fontFamily: '',$/;"	p	class:defaultTheme
+throttle	js/darkreader.js	/^    function throttle(callback) {$/;"	f
+throwCORSError	js/darkreader.js	/^    var throwCORSError = function () {$/;"	f
+timeout	js/pll.js	/^var timeout;$/;"	v
+timer	js/pll.js	/^var timer = document.getElementById("timer");$/;"	v
+timerActivatingButton	js/pll.js	/^var timerActivatingButton = 32; \/\/ 17 for ctrl$/;"	v
+timerSize	js/pll.js	/^var timerSize,scrambleSize;$/;"	v
+toFixed	js/darkreader.js	/^    function toFixed(n, digits) {$/;"	f
+toSVGMatrix	js/darkreader.js	/^    function toSVGMatrix(matrix) {$/;"	f
+truncated	qt/scrambles.cpp	/^QString truncated(const QString& s)$/;"	f
+tryParseColor	js/darkreader.js	/^    function tryParseColor($color) {$/;"	f
+trys	js/darkreader.js	/^        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;$/;"	p	class:_
+txtFilesInSubDir	qt/files_processing.cpp	/^QStringList txtFilesInSubDir(QString subdir)$/;"	f
+unsubscribeFromSheetChanges	js/darkreader.js	/^        function unsubscribeFromSheetChanges() {$/;"	f
+update	js/darkreader.js	/^        function update() {$/;"	f	function:createManager
+updateVariables	js/darkreader.js	/^    function updateVariables(newVars) {$/;"	f
+urlToImage	js/darkreader.js	/^    function urlToImage(url) {$/;"	f
+useFont	js/darkreader.js	/^        sepia: 0,$/;"	p	class:defaultTheme
+varRegex	js/darkreader.js	/^    var varRegex = \/var\\((--[^\\s,]+),?\\s*([^\\(\\)]*(\\([^\\(\\)]*\\)[^\\(\\)]*)*\\s*)\\)\/g;$/;"	v
+verb	js/darkreader.js	/^        function verb(n) { return function (v) { return step([n, v]); }; }$/;"	f	function:__generator
+waiting	js/pll.js	/^var running = false; var waiting = false;$/;"	v
+watch	js/darkreader.js	/^        function watch() {$/;"	f
+watchForDocumentVisibility	js/darkreader.js	/^    function watchForDocumentVisibility(callback) {$/;"	f
+watchForInlineStyles	js/darkreader.js	/^    function watchForInlineStyles(elementStyleDidChange) {$/;"	f
+watchForNodePosition	js/darkreader.js	/^    function watchForNodePosition(node, onRestore) {$/;"	f
+watchForStyleChanges	js/darkreader.js	/^    function watchForStyleChanges(update) {$/;"	f
+watchForUpdates	js/darkreader.js	/^    function watchForUpdates() {$/;"	f
+window.chrome.runtime.sendMessage	js/darkreader.js	/^        var nativeSendMessage_1 = window.chrome.runtime.sendMessage;$/;"	f
+writeToFile	qt/scrambles.cpp	/^void Algs::writeToFile(const QString& filepath)$/;"	f	class:Algs
+x	js/darkreader.js	/^        var x = c * (1 - Math.abs((h \/ 60) % 2 - 1));$/;"	v

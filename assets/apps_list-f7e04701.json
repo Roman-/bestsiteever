@@ -1,0 +1,202 @@
+{
+  "apps": [
+    {
+      "name": "zbll trainer",
+      "url": "./zbll/",
+      "description": "A timer-like tool to master ZBLL. Customize cases & categories for practice, review forgotten ZBLLs, and create presets for targeted learning. Discover more on the speedsolving thread: <a class='innerA' href='https://www.speedsolving.com/forum/threads/zbll-trainer.63572/' target='_blank'>click</a>. Video overview: <a class='innerA' href='https://youtu.be/BMBqrxzEttw' target='_blank'>click</a>.",
+      "img": "img/zbll.jpg"
+    },
+    {
+      "name": "mosaic",
+      "url": "./mosaic/",
+      "description": "Rubik's Cube mosaic-building software, optimized for creating stunning portraits. Video tutorial: <a class='innerA' title='How to make Cube mosaics' href='https://youtu.be/uE54HH__H4g' target='_blank'>click</a>.",
+      "img": "img/mosaic.jpg"
+    },
+    {
+      "name": "pll recognition trainer",
+      "url": "./pll_recognition/",
+      "description": "An adaptive, non-stop PLL recognition trainer. Perfect your skills with continuous practice. Watch the video: <a class='innerA' title='PLL recognition trainer' href='https://youtu.be/lIjel-amSeg' target='_blank'>click</a>.",
+      "img": "img/pll_recognition.jpg"
+    },
+    {
+      "name": "oll trainer",
+      "url": "./oll/",
+      "description": "A timer-like tool to conquer OLL. Choose specific groups of cases to practice, view suggested algorithms, and quickly review challenging or forgotten OLLs. More info: <a class='innerA' href='https://www.speedsolving.com/forum/threads/oll-trainer.66924/' target='_blank'>click</a>.",
+      "img": "img/oll.jpg"
+    },
+    {
+      "name": "anagrams trainer",
+      "url": "./anagrams/",
+      "description": "A sleek tool to efficiently master anagrams. Perfect for sharpening your wordplay skills.",
+      "img": "img/anagrams.jpg"
+    },
+    {
+      "name": "ro puzzle",
+      "url": "./ro/",
+      "description": "A unique 2D puzzle inspired by the classic 15 puzzle but with intriguing parities. Developed independently by multiple enthusiasts (including me :p)",
+      "img": "img/ro.jpg"
+    },
+    {
+      "name": "levenshtein guess",
+      "url": "./leven/",
+      "description": "Challenge yourself with this word game! Given a word like <b>'cat'</b>, generate words one letter away like <b>cap, car, cast, eat, ...</b>. Can you solve the inverse problem? Find out with this game.",
+      "img": "img/leven.jpg"
+    },
+    {
+      "name": "raven",
+      "url": "./raven/",
+      "description": "Pattern puzzle based on Raven's Progressive Matrices with different flavors and casual allusions to generative art.",
+      "img": "img/raven.jpg"
+    },
+    {
+      "name": "monkey memory",
+      "url": "./monkey/",
+      "description": "Short-term memory game/trainer targeted at kids.",
+      "img": "img/monkey_memory.jpg"
+    },
+    {
+      "name": "BSE memory",
+      "url": "./memory/",
+      "description": "A memory sports trainer that surpasses anything you've seen before. Boost your memory skills with this superior tool.",
+      "img": "img/memory.jpg"
+    },
+    {
+      "name": "coLPI",
+      "url": "./colpi/",
+      "description": "[read-only mode due to technical issues] Explore the public collection of letter-pair images for blindfolded cubing. Discover, vote, and add your own images.",
+      "img": "img/colpi.jpg"
+    },
+    {
+      "name": "dice",
+      "url": "./dice/",
+      "description": "An online dice roll simulator. Supports multiple dice and coins for all your gaming needs.",
+      "img": "img/dice.jpg"
+    },
+    {
+      "name": "colorplot",
+      "url": "./colorplot/",
+      "description": "visualize mathematical functions in a whole new way. This tool creates colorful plots based on your formulas.",
+      "img": "img/colorplot.jpg"
+    },
+    {
+      "name": "particles-draw",
+      "url": "./particles/",
+      "description": "A generative art project that harnesses the beauty of simple particle motion.",
+      "img": "img/particles.jpg"
+    },
+    {
+      "name": "eyetest",
+      "url": "./eyetest/",
+      "description": "A fun game to test your ability to discern similar colors. Try it on your smartphone and climb the leaderboard!",
+      "img": "img/eyetest.jpg"
+    },
+    {
+      "name": "tables",
+      "url": "./tables/",
+      "description": "A comprehensive collection of BLD algorithm tables and lists. Search by buffers and piece types to find the most relevant tables.",
+      "img": "img/tables.jpg"
+    },
+    {
+      "name": "pll trainer",
+      "url": "./pll/",
+      "description": "A timer-like tool to hone your PLL recognition and execution. Specify difficult angles and AUFs, measure execution time, and improve your PLL performance.",
+      "img": "img/pll.jpg"
+    },
+    {
+      "name": "giveaway",
+      "url": "./giveaway/",
+      "description": "Create a visual <b>live giveaway</b> for your event. Fully customizable page design, from background selection to text size adjustments.",
+      "img": "img/giveaway.jpg"
+    },
+    {
+      "name": "alias",
+      "url": "./alias/",
+      "description": "Portable version of the <a class='innerA' href='https://en.wikipedia.org/wiki/Alias_(board_game)' target='_blank'>classic board game</a> for 2+ players. Gather your friends and see who’s the best at explaining words!",
+      "img": "img/alias.jpg"
+    },
+    {
+      "name": "badge generator",
+      "url": "./badges/",
+      "description": "Design and print badges (nametags) for WCA speedcubing competitions. Load your image and .csv file to generate ready-to-print badges.",
+      "img": "img/badges.jpg"
+    },
+    {
+      "name": "text to png",
+      "url": "./text_to_png/",
+      "description": "Quickly convert text into a transparent PNG image.",
+      "img": "img/text_to_png.jpg"
+    },
+    {
+      "name": "memo test",
+      "url": "./memotest/",
+      "description": "Generate character sequences for memorization practice. Perfect for both memory sports training and speedcubing BLD memo imitation.",
+      "img": "img/memotest.jpg"
+    },
+    {
+      "name": "Balda",
+      "url": "./balda/",
+      "description": "A word game similar to Scrabble, featuring a board analyzer to enhance your gameplay.",
+      "img": "img/balda.jpg"
+    },
+    {
+      "name": "letter-triplets",
+      "url": "./lti/",
+      "description": "Search for words containing specific Cyrillic letter-triplets. Improve your system of images for memory sports.",
+      "img": "img/lti.jpg"
+    },
+    {
+      "name": "card-pairs",
+      "url": "./cardspair/",
+      "description": "A card-pair drill program used by top memory athletes. Practice the 'Ben System' for one-image-per-2-cards memorization",
+      "img": "img/cards.jpg"
+    },
+    {
+      "name": "inverse scramble",
+      "url": "./inverse_scramble/",
+      "description": "A simple tool for scramble inversion.",
+      "img": "img/inverse.jpg"
+    },
+    {
+      "name": "alias kids",
+      "url": "./alias_kids_2/",
+      "description": "A version of the classic Alias board game designed for playing with children who may not yet be able to read",
+      "img": "img/alias_kids.jpg"
+    },
+    {
+      "name": "reading grid generator",
+      "url": "./reading_grid/",
+      "description": "Labelled emoji grid generator lets parents and teachers create customized literacy posters",
+      "img": "img/reading_grid.jpg"
+    },
+    {
+      "name": "spoken numbers",
+      "url": "./numbers/",
+      "description": "A customizable, mobile-friendly spoken numbers simulator. Train for memory sports by gradually increasing digit counts and memo speed.",
+      "img": "img/spoken.jpg"
+    },
+    {
+      "name": "Draw a sound",
+      "url": "./drawasound/",
+      "description": "Impress your girlfriend by drawing \"I love you\" with sound and then playing it in front of <a href='https://sunandstuff.com/spectrum/' target='_blank'>sound spectrometer</a>",
+      "img": "img/audio.jpg"
+    },
+    {
+      "name": "cutifier next",
+      "url": "./cutifier/",
+      "description": "An essential tool for WCA competition organizers. Create individual schedules, registration lists, and other cute features to make your competition stand out. Watch <a href='https://youtu.be/5Q-lcm1os7o' target='_blank'>this video tutorial</a> for an overview.",
+      "img": "img/cutifier.jpg"
+    },
+    {
+      "name": "6+ rankings",
+      "url": "./rankings/",
+      "description": "World rankings for unofficial blindfolded events. Check out the speedsolving thread: <a class='innerA' href='https://www.speedsolving.com/forum/posts/852524/' target='_blank'>click</a>.",
+      "img": "img/rankings.jpg"
+    },
+    {
+      "name": "spyfall",
+      "url": "./spy/",
+      "description": "Mobile version of the <a href='https://en.wikipedia.org/wiki/Spyfall' target='_blank'>Spyfall</a> party game for 3-8 players. A psychological game to uncover the spy, best played with 4-5 friends in person.",
+      "img": "img/spy.jpg"
+    }
+  ]
+}

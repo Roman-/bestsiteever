@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href="css/main.css?v1">
+<link rel="stylesheet" type="text/css" href="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.css">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Badges builder software. Make badges for your WCA competition!" />
+<meta name="keywords" content="nametags, name tag generator, wca, competition badges" />
+<meta name="author" content="Roman Strakhov">
+<title>Name tag generator</title>
+
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jspdf/jspdf.js"></script>
+
+<!-- jspdf and plugins to be used -->
+<script type="text/javascript" src="js/jspdf/plugins/addimage.js"></script>
+<script type="text/javascript" src="js/jspdf/plugins/standard_fonts_metrics.js"></script>
+<script type="text/javascript" src="js/jspdf/plugins/split_text_to_size.js"></script>
+<script type="text/javascript" src="js/jspdf/jspdf.customfonts.min.js"></script>
+<script type="text/javascript" src="js/jspdf/default_vfs.js"></script>
+
+<!-- scripts for badgesGen -->
+<script type="text/javascript" src="data/csv_example.txt"></script>
+<script type="text/javascript" src="js/helpers.js?v12"></script>
+<script type="text/javascript" src="js/global.js?v12"></script>
+<script type="text/javascript" src="js/init.js?v12"></script>
+<script type="text/javascript" src="js/pdfcomposer.js?v12"></script>
+<script type="text/javascript" src="js/customfonts.js?v12"></script>
+<script type="text/javascript" src="js/labels.js?v12"></script>
+<script type="text/javascript" src="js/tooltips.js?v12"></script>
+
+</head>
+
+<body>
+    <!-- GENERAL SETUP LAYOUT -->
+    <div id="generalSetupLay">
+        <h1>Name tag generator</h1>
+        <div id='description'>Loading... </div>
+        <table class='gsLayTable'>
+            <tr>
+                <td class='leftColumn'>
+
+                    <table class='pageSetupControls'>
+                        <tr>
+                            <h2>General setup</h2>
+                            <td class='pageSetupControls'>Badge background image <img class='help' id='help-bgimg'/></td>
+                            <td>
+                                <button id='uploadImgBtn'>Upload</button>
+                                <span id='bgImgName'>(default.jpg)</span>
+                                <input id='bgFileId' type='file' accept="image/jpeg" hidden/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>List of competitors <img class='help' id='help-csvfile'/></td>
+                            <td>
+                                <button id='uploadCsvBtn'>Upload</button>
+                                <span id='compCsvName'>(test.csv)</span>
+                                <span id='compCsvInfo'></span>
+                                <input id='csvFileId' type='file' accept=".csv" hidden/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Badge width in millimeters <img class='help' id='help-sizemm'/></td>
+                            <td>
+                        <input id='badgePhysicalW' class="tooltiptext" value='70'/> mm
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Add empty name tags <img class='help' id='help-empty'/></td>
+                            <td>
+                        <input id='badgeExtraPages' class="tooltiptext" value='0'/> pages
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>Overview</h2>
+                    <div id='infoDiv'>
+                    </div>
+                    <br>
+                    <button id="finishPageSetup" class="bigButton">Done</button>
+                </td>
+                <td class='rightColumn'>
+                    <img id="imageBgPreview" src="img/default-bg.png" alt="badge" title="Upload background image..."/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- EDIT BADGE AND LABELS LAYOUT -->
+    <div id="editLay">
+    <div id='labelsWrap'> </div>
+        <table class='editLayTable'>
+            <tr>
+                <td class='leftColumn'>
+                    <img id="editImage" src="" alt="background" style='width: 400px;'/>
+                </td>
+                <td class='rightColumn'>
+                        <div id='labelsMenuWrap'> </div>
+
+                        <label for="namePreviewSelect" class="ui-widget">Preview name:</label>
+                        <select id="namePreviewSelect"></select>
+                        <hr>
+                        <div id='generateBtnWrap'>
+                            <button id="backToPageSet" class="bigBtn">
+                                <span class='ui-icon ui-icon-arrowthick-1-w'></span>Page setup
+                            </button>
+                            <button id="generatePdfBtn"></button>
+                        </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- GENERATED PDF LAYOUT (previewing PDF in iframe without downloading the file) -->
+    <div id="pdfLay">
+        <button id='backToEditor'><span class='ui-icon ui-icon-arrowthick-1-w'></span>Editor</button>
+        <button id='donwloadPdf'><span class='ui-icon ui-icon-arrowstop-1-s'></span>Download</button>
+        <br>
+        <iframe id='pdfFrame'></iframe>
+    </div>
+
+    <div id='stylesWrap'></div>
+</body>
+</html>

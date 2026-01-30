@@ -1,0 +1,99 @@
+Using 8-corner accelerator table.
+computation started...
+
+Searching depth 7
+
+Searching depth 8
+
+Searching depth 9
+
+Searching depth 10
+
+Searching depth 11
+
+Searching depth 12
+
+Searching depth 13
+
+Searching depth 14
+
+R L F L' B L F' R' L' F R B' R' F'  (14f*)
+R L B R' F R B' R' L' B L F' L' B'  (14f*)
+R B' R' D' F D2 R D' B D R' D2 F' D  (14f*)
+R2 U R2 U' F2 U R2 B2 D' L2 D B2 U' R2  (14f*)
+R2 U R2 U' F2 D B2 L2 D' F2 U B2 U' R2  (14f*)
+R2 U R2 D' L2 U F2 R2 U' L2 D B2 U' R2  (14f*)
+R2 U B2 U' F2 D L2 B2 D' F2 U R2 U' R2  (14f*)
+R2 U B2 D' L2 U R2 F2 U' L2 D R2 U' R2  (14f*)
+R2 U B2 D' L2 D B2 R2 U' F2 U R2 U' R2  (14f*)
+R2 U' R2 U B2 U' R2 F2 D L2 D' F2 U R2  (14f*)
+R2 U' R2 U B2 D' F2 L2 D B2 U' F2 U R2  (14f*)
+R2 U' R2 D L2 U' B2 R2 U L2 D' F2 U R2  (14f*)
+R2 U' F2 U B2 D' L2 F2 D B2 U' R2 U R2  (14f*)
+R2 U' F2 D L2 U' R2 B2 U L2 D' R2 U R2  (14f*)
+R2 U' F2 D L2 D' F2 R2 U B2 U' R2 U R2  (14f*)
+R2 D L2 U' R2 D F2 L2 D' R2 U B2 D' R2  (14f*)
+R2 D L2 D' F2 U B2 R2 U' F2 D B2 D' R2  (14f*)
+R2 D L2 D' F2 D L2 B2 U' R2 U B2 D' R2  (14f*)
+R2 D B2 U' R2 U B2 L2 D' F2 D L2 D' R2  (14f*)
+R2 D B2 U' R2 D L2 F2 D' R2 U L2 D' R2  (14f*)
+R2 D B2 D' F2 U R2 B2 U' F2 D L2 D' R2  (14f*)
+R2 D' F2 U R2 U' F2 L2 D B2 D' L2 D R2  (14f*)
+R2 D' F2 U R2 D' L2 B2 D R2 U' L2 D R2  (14f*)
+R2 D' F2 D B2 U' R2 F2 U B2 D' L2 D R2  (14f*)
+R2 D' L2 U R2 D' B2 L2 D R2 U' F2 D R2  (14f*)
+R2 D' L2 D B2 U' F2 R2 U B2 D' F2 D R2  (14f*)
+R2 D' L2 D B2 D' L2 F2 U R2 U' F2 D R2  (14f*)
+R' F R D B' D2 R' D F' D' R D2 B D'  (14f*)
+R' L' F' R B' R' F R L F' L' B L F  (14f*)
+R' L' B' L F' L' B R L B' R' F R B  (14f*)
+F U' B D2 B' U F' B U' F D2 F' U B'  (14f*)
+F R B R' F' R L F L' B' L F' R' L'  (14f*)
+F D2 R D' B' D R' D2 F' D R B R' D'  (14f*)
+F' U B' D2 B U' F B' U F' D2 F U' B  (14f*)
+F' D2 L' D B D' L D2 F D' L' B' L D  (14f*)
+F' L' B' L F R' L' F' R B R' F R L  (14f*)
+D R B' R' D' F D2 R D' B D R' D2 F'  (14f*)
+D F' D2 L' D B D' L D2 F D' L' B' L  (14f*)
+D L F' L' D' B D2 L D' F D L' D2 B'  (14f*)
+D B' D2 R' D F D' R D2 B D' R' F' R  (14f*)
+D' R' F R D B' D2 R' D F' D' R D2 B  (14f*)
+D' F D2 R D' B' D R' D2 F' D R B R'  (14f*)
+D' L' B L D F' D2 L' D B' D' L D2 F  (14f*)
+D' B D2 L D' F' D L' D2 B' D L F L'  (14f*)
+L F' L' D' B D2 L D' F D L' D2 B' D  (14f*)
+L2 U F2 U' B2 D R2 F2 D' B2 U L2 U' L2  (14f*)
+L2 U F2 D' R2 U L2 B2 U' R2 D L2 U' L2  (14f*)
+L2 U F2 D' R2 D F2 L2 U' B2 U L2 U' L2  (14f*)
+L2 U L2 U' B2 U L2 F2 D' R2 D F2 U' L2  (14f*)
+L2 U L2 U' B2 D F2 R2 D' B2 U F2 U' L2  (14f*)
+L2 U L2 D' R2 U B2 L2 U' R2 D F2 U' L2  (14f*)
+L2 U' L2 U F2 U' L2 B2 D R2 D' B2 U L2  (14f*)
+L2 U' L2 U F2 D' B2 R2 D F2 U' B2 U L2  (14f*)
+L2 U' L2 D R2 U' F2 L2 U R2 D' B2 U L2  (14f*)
+L2 U' B2 U F2 D' R2 B2 D F2 U' L2 U L2  (14f*)
+L2 U' B2 D R2 U' L2 F2 U R2 D' L2 U L2  (14f*)
+L2 U' B2 D R2 D' B2 L2 U F2 U' L2 U L2  (14f*)
+L2 D R2 U' L2 D B2 R2 D' L2 U F2 D' L2  (14f*)
+L2 D R2 D' B2 U F2 L2 U' B2 D F2 D' L2  (14f*)
+L2 D R2 D' B2 D R2 F2 U' L2 U F2 D' L2  (14f*)
+L2 D F2 U' L2 U F2 R2 D' B2 D R2 D' L2  (14f*)
+L2 D F2 U' L2 D R2 B2 D' L2 U R2 D' L2  (14f*)
+L2 D F2 D' B2 U L2 F2 U' B2 D R2 D' L2  (14f*)
+L2 D' R2 U L2 D' F2 R2 D L2 U' B2 D L2  (14f*)
+L2 D' R2 D F2 U' B2 L2 U F2 D' B2 D L2  (14f*)
+L2 D' R2 D F2 D' R2 B2 U L2 U' B2 D L2  (14f*)
+L2 D' B2 U L2 U' B2 R2 D F2 D' R2 D L2  (14f*)
+L2 D' B2 U L2 D' R2 F2 D L2 U' R2 D L2  (14f*)
+L2 D' B2 D F2 U' L2 B2 U F2 D' R2 D L2  (14f*)
+L' B L D F' D2 L' D B' D' L D2 F D'  (14f*)
+B U' F D2 F' U F B' U' B D2 B' U F'  (14f*)
+B D2 L D' F' D L' D2 B' D L F L' D'  (14f*)
+B L F L' B' R L B R' F' R B' R' L'  (14f*)
+B' U F' D2 F U' F' B U B' D2 B U' F  (14f*)
+B' R' F' R B R' L' B' L F L' B R L  (14f*)
+B' D2 R' D F D' R D2 B D' R' F' R D  (14f*)
+Searching depth 15
+
+
+computation stopped.

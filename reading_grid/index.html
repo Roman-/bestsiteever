@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reading-encouragement Word Grid generator</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css?v2">
+<!-- Google-fonts preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<h1>Reading grid</h1>
+
+<section id="controls">
+  <fieldset>
+    <legend>Layout</legend>
+    <label>Columns  <input id="cols" type="number" min="1" max="20" value="4"></label>
+    <label>Rows     <input id="rows" type="number" min="1" max="20" value="3"></label>
+    <label>Width  <input id="width" type="number" min="1" value="1080"></label>
+    <label>Height <input id="height" type="number" min="1" value="1920"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Fonts</legend>
+    <div class="range-wrap">
+      <label for="emojiSize">Emoji size (px): <span id="emojiVal">150</span></label>
+      <input id="emojiSize" type="range" min="20" max="280" value="150">
+    </div>
+    <div class="range-wrap">
+      <label for="labelSize">Label size (px): <span id="labelVal">55</span></label>
+      <input id="labelSize" type="range" min="10" max="200" value="55">
+    </div>
+      <label>Label font
+        <select id="fontSel">
+        <option value="Roboto" style="font-family:'Roboto',sans-serif">Roboto</option>
+        <option value="Bebas Neue" style="font-family:'Bebas Neue',sans-serif">Bebas Neue</option>
+        <option value="Rubik" style="font-family:'Rubik',sans-serif">Rubik</option>
+        <option value="Quicksand" style="font-family:'Quicksand',sans-serif">Quicksand</option>
+        <option value="Fredoka" style="font-family:'Fredoka',sans-serif">Fredoka</option>
+        <option value="Comic Neue" style="font-family:'Comic Neue',sans-serif">Comic Neue</option>
+        <option value="Baloo 2" style="font-family:'Baloo 2',sans-serif">Baloo 2</option>
+        <option value="Luckiest Guy" style="font-family:'Luckiest Guy',sans-serif">Luckiest Guy</option>
+        <option value="Anton" style="font-family:'Anton',sans-serif">Anton</option>
+        <option value="Arvo" style="font-family:'Arvo',sans-serif">Arvo</option>
+        <option value="Bungee" style="font-family:'Bungee',sans-serif">Bungee</option>
+        <option value="Gloria Hallelujah" style="font-family:'Gloria Hallelujah',sans-serif">Gloria Hallelujah</option>
+      </select>
+      </label>
+      <div class="color-row">
+        <label for="textOutline">Text outline</label>
+        <input id="textOutline" type="checkbox">
+      </div>
+      <div class="color-row">
+        <label for="colorfulText">Colorful text</label>
+        <input id="colorfulText" type="checkbox">
+      </div>
+      <div class="color-row">
+        <label for="labelBold">Bold</label>
+        <input id="labelBold" type="checkbox" checked>
+      </div>
+      <label>Capitalization
+        <select id="capsSel">
+          <option value="lower" selected>lowercase</option>
+          <option value="upper">UPPERCASE</option>
+          <option value="cap">Capitalized</option>
+        </select>
+      </label>
+    </fieldset>
+
+  <fieldset>
+    <legend>Lines</legend>
+    <div class="range-wrap">
+      <label for="gridStrokeW">Grid width (px): <span id="gridStrokeVal">2</span></label>
+      <input id="gridStrokeW" type="range" min="0" max="20" value="2">
+    </div>
+    <div class="color-row">
+      <label for="gridStrokeCol">Grid color</label>
+      <input id="gridStrokeCol" type="color" value="#dddddd">
+    </div>
+    <div class="range-wrap">
+      <label for="borderStrokeW">Border width (px): <span id="borderStrokeVal">2</span></label>
+      <input id="borderStrokeW" type="range" min="0" max="20" value="2">
+    </div>
+    <div class="color-row">
+      <label for="borderStrokeCol">Border color</label>
+      <input id="borderStrokeCol" type="color" value="#000000">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Background</legend>
+    <div class="range-wrap">
+      <label for="bgAlpha">Opacity: <span id="alphaVal">100</span>%</label>
+      <input id="bgAlpha" type="range" min="0" max="100" value="100">
+    </div>
+    <div class="color-row">
+      <label for="bgColor">Background color</label>
+      <input id="bgColor" type="color" value="#f2faff">
+    </div>
+  </fieldset>
+
+  <button id="generate">Generate</button>
+  <button id="download">Download PNG</button>
+</section>
+
+<canvas id="matrix"></canvas>
+<script src="wordMap.js?v2"></script>
+<script src="script.js?v2"></script>
+
+</body>
+</html>

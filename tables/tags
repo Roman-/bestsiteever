@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+applyFilter	js/composers.js	/^function applyFilter(elem) {$/;"	f
+closePreview	js/helpers.js	/^function closePreview()$/;"	f
+compareTables	js/helpers.js	/^function compareTables(a, b) {$/;"	f
+composeHtmlTable	js/composers.js	/^function composeHtmlTable(filter) {$/;"	f
+composeSpeedsolvingTable	js/composers.js	/^function composeSpeedsolvingTable() {$/;"	f
+elemName	js/helpers.js	/^function elemName(el) {$/;"	f
+elementName	js/composers.js	/^function elementName(el) {$/;"	f
+previewPicture	js/helpers.js	/^function previewPicture(picUrl) {$/;"	f
+sortTables	js/helpers.js	/^function sortTables() {$/;"	f
+tagClassNameByElement	js/composers.js	/^function tagClassNameByElement(el) {$/;"	f
