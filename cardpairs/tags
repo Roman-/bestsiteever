@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+cell00	script.js	/^var cell00 = document.getElementById('00');$/;"	v
+cell00	testscript.js	/^var cell00 = document.getElementById('00');$/;"	v
+cell01	script.js	/^var cell01 = document.getElementById('01');$/;"	v
+cell01	testscript.js	/^var cell01 = document.getElementById('01');$/;"	v
+cell10	script.js	/^var cell10 = document.getElementById('10');$/;"	v
+cell10	testscript.js	/^var cell10 = document.getElementById('10');$/;"	v
+cell11	script.js	/^var cell11 = document.getElementById('11');$/;"	v
+cell11	testscript.js	/^var cell11 = document.getElementById('11');$/;"	v
+classNameOf	script.js	/^function classNameOf(suit) {$/;"	f
+classNameOf	testscript.js	/^function classNameOf(suit) {$/;"	f
+clearspaces	script.js	/^function clearspaces() {$/;"	f
+diffCb	script.js	/^var diffCb = document.getElementById('diffcb');$/;"	v
+fromInput	script.js	/^function fromInput(el) {$/;"	f
+fromInput	testscript.js	/^function fromInput(el) {$/;"	f
+generateDrill	script.js	/^function generateDrill() {$/;"	f
+generateDrill	testscript.js	/^function generateDrill() {$/;"	f
+initInputs	script.js	/^function initInputs() {$/;"	f
+initInputs	testscript.js	/^function initInputs() {$/;"	f
+randomElement	script.js	/^function randomElement(arr) {$/;"	f
+randomElement	testscript.js	/^function randomElement(arr) {$/;"	f
+suits1	script.js	/^var suits1 = document.getElementById('suits1');$/;"	v
+suits1	testscript.js	/^var suits1 = document.getElementById('suits1');$/;"	v
+suits2	script.js	/^var suits2 = document.getElementById('suits2');$/;"	v
+suits2	testscript.js	/^var suits2 = document.getElementById('suits2');$/;"	v
+suitsArray	script.js	/^var suitsArray = ['♦♠♥♣'];$/;"	v
+suitsArray	testscript.js	/^var suitsArray = ['♦♠♥♣'];$/;"	v
+surprize	script.js	/^function surprize() {$/;"	f
+surprize	testscript.js	/^function surprize() {$/;"	f
+values1	script.js	/^var values1 = document.getElementById('val1');$/;"	v
+values1	testscript.js	/^var values1 = document.getElementById('val1');$/;"	v
+values2	script.js	/^var values2 = document.getElementById('val2');$/;"	v
+values2	testscript.js	/^var values2 = document.getElementById('val2');$/;"	v
+valuesArray	script.js	/^var valuesArray = ['A234567890JQK'];$/;"	v
+valuesArray	testscript.js	/^var valuesArray = ['A234567890JQK'];$/;"	v

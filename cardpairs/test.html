@@ -1,0 +1,41 @@
+﻿<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css?v1">
+    <head>
+        <title> Card-pair drills </title>
+    </head>
+    <body class="niceBody" id='bodyId' onload='initInputs();'>
+
+⋆ First:
+<input type='text' size='13' value='please' id='val1'/>
+<input type='text' value='wait'  size='4' id='suits1'/>
+⋆ Second:
+<input type='text' size='13' value='the thing goes' id='val2'/>
+<input type='text' value='skrrra' size='4'  id='suits2'/>
+⋆ <a class="myButton"onclick="initInputs();">Reset</a>
+⋆ <a class="myButton"onclick="generateDrill();">Generate (Space)</a>
+        <!--<input id="btn" type='button' value = "Gen" onclick="generateDrill();"></input>-->
+        <br><br><br><br>
+        <div>
+            <table class = 'drillTable'>
+                <tr>
+                    <td id='00' class='lefttopborders'>
+                    </td>
+                    <td id='01' class='lefttopborders'>
+                    </td>
+                </tr>
+                <tr>
+                    <td id='10' class='leftborders'>
+                    </td>
+                    <td id='11' class='leftborders'>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+
+    <script src="testscript.js?v1"></script>
+
+</html>
+

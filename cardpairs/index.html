@@ -1,0 +1,46 @@
+﻿<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css?v5">
+    <head>
+        <title> Card-pair drills </title>
+    </head>
+    <body class="niceBody" id='bodyId'>
+
+    <div id='top_panel'>
+        First:
+        <input type='text' size='13' value='A234567890JQK' id='val1' class='cardsPairSetup'/>
+        <input type='text' value='♦♠♥♣'  size='4' id='suits1'  class='cardsPairSetup'/>
+        ⋆ Second:
+        <input type='text' size='13' value='A234567890JQK' id='val2' class='cardsPairSetup'/>
+        <input type='text' value='♦♠♥♣' size='4'  id='suits2' class='cardsPairSetup'/>
+        ⋆ <a class="myButton" onclick="resetInputs();">Reset</a>
+        ⋆ <a class="myButton" id='showDrillBtn'>Show</a>
+        ⋆ <input type='number' value='1000' id='secondsInterval' class='cardsPairSetup'/>
+        <a class="myButton" id='autoDrill'>Autoplay</a>
+        ⋆ <span  id='status'>hi</span>
+    </div>
+        <br><br><br><br>
+        <div id='main_wrap'>
+            <table class = 'drillTable'>
+                <tr>
+                    <td id='00' class='lefttopborders'>
+                    </td>
+                    <td id='01' class='lefttopborders'>
+                    </td>
+                </tr>
+                <tr>
+                    <td id='10' class='leftborders'>
+                    </td>
+                    <td id='11' class='leftborders'>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script src="script.js?v8"></script>
+    <script src="helpers.js?v8"></script>
+    </body>
+
+</html>
+
