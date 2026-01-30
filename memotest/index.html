@@ -1,0 +1,37 @@
+﻿<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="description" content="Memory sports practising tool. Train memorizing digits, binaries and other information." />
+<meta name="keywords" content="memory sports, memoriad, speed numbers" />
+<meta name="author" content="Roman Strakhov">
+<title>
+    Memo test
+</title>
+</head>
+<body class="niceBody" onload="loadPresets();loadLayout();" id="bodyid">
+<div class="menu2">
+    Preset: <select id='in_presets' onclick="applyPreset(); saveLayout();"></select>
+    ⋆ Characters: <input type='text' value='ABCDEFGHIJKLMNOPQRSTUWXYZ' id='in_chars'/>
+    ⋆ Items: <input type='number' value='43' id='in_items' min='1' maxlength="3" size="3">
+    ⋆ Chars per item: <input type='number' value='2' id='in_charsperitem' min='1' maxlength="3" size="3">
+    ⋆ Unique: <input type='checkbox' id='in_unique'>
+    ⋆ Items per row: <input type='number' value='10' id='in_itemsperrow' min='1' maxlength="3" size="3">
+    ⋆ Font size: <input type='number' value='55' id='in_fontsize' min='10' onchange="changeFontSize();" maxlength="3" size="3" length="3">
+    <a class="myButton" onclick='generate();'>generate</a>
+</div>
+
+<hr>
+
+<div id="tablePlaceholder">
+    <h1>Memo test</h1>
+    A simple tool to practice memory sports or BLD memo, inspired by <a href='https://www.speedsolving.com/forum/threads/what-memory-sports-do-you-do-to-practice-for-bld.65154/'>this</a> post.<br>
+    5BLD is approximately 43 letter-pairs (86 letters), 4BLD ≅ 23 letter-pairs. For multi, it's about 10-12 images per cube, so setting up 12 items per row will be good for practicing MBLD.<br>
+    This app is intended to be as simple as possible, without a "concentration→memorization→recall→review" cycle. If you want to play this scenario however, you can use separate timer to measure memo time, then type memorized letters into the left textarea of the <a href='https://www.diffchecker.com/' target="_blank">diffchecker</a> and the original generated symbols (check the <a href="https://www.google.ru/search?q=open+browser+console" target="_blank">browser console</a>) into the right one.<br>
+    Have fun!
+</div>
+
+<script src='memo.js?v=3'></script>
+
+</body>
+</html>
