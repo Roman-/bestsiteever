@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Roll the dice or throw the coin online" />
+    <meta name="keywords" content="roll the dice online, throw coin online" />
+    <meta name="author" content="Roman Strakhov">
+    <meta name="theme-color" content="#eee" id='metaBarColor'>
+    <link rel="manifest" href="manifest.json?v2">
+    <link rel="icon" href="favicon.ico">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="js/3rd_party/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/fa.min.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/3rd_party/jquery-3.3.1.min.js" ></script>
+    <script src="js/3rd_party/popper.min.js"></script>
+    <script src="js/3rd_party/bootstrap.min.js"></script>
+
+    <!-- 3rd party js -->
+    <script src='js/3rd_party/bootstrap-input-spinner.js'> </script>
+    <script src='js/3rd_party/darkreader.js'> </script>
+
+    <!-- custom scripts and styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css?v03">
+    <script src='js/init.js?v03'> </script>
+    <script src='js/glob.js?v03'> </script>
+    <script src='js/helpers.js?v03'> </script>
+
+    <title>Dice</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href='#'>
+          <i class='fa fa-dice'></i>
+          <span id='titleSpan'>Dice</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" onclick='loRoll(1, false)'>A dice</a>
+            <a class="nav-link" onclick='loRoll(2, false)'>2 dice</a>
+            <a class="nav-link" onclick='loRoll(3, false)'>3 dice</a>
+            <a class="nav-link" onclick='loRoll(4, false)'>4 dice</a>
+            <a class="nav-link" onclick='loRoll(5, false)'>5 dice</a>
+            <a class="nav-link" onclick='loRoll(1, true)'>A coin</a>
+            <a class="nav-link" onclick='loRoll(2, true)'>2 coins</a>
+            <a class="nav-link" onclick='loRoll(4, true)'>4 coins</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<div id="mainLayWrap" class='container'>
+    <div class='row text-center' id='mainRow'>
+        &nbsp;
+    </div>
+    <div id='scoreSum' class='h1 text-center' style='font-size: 5em'>
+    </div>
+    <button id='rollBtn' class='btn btn-primary col-12' style='height: 4em;'>Roll</button>
+
+    <div id='mainLayout' class='centered'>
+    </div>
+</div>
+
+</body>
+</html>
