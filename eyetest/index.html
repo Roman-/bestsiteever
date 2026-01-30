@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Can you discern similar colors?" />
+<meta name="keywords" content="eyetest, game, vision test, color test, color preception test" />
+<meta name="author" content="Roman Strakhov">
+<link rel="stylesheet" type="text/css" href="styles/main.css?v=7">
+<link rel="stylesheet" type="text/css" href="styles/buttons.css?v=6">
+<link rel="stylesheet" type="text/css" href="styles/leaderboard.css?v=6">
+<link rel="stylesheet" type="text/css" href="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.css">
+<title>Eyetest-touch on best site ever</title>
+</head>
+<body id="body">
+
+<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src='js/global.js?v=02'> </script>
+<script src='js/init.js?v=10'> </script>
+<script src='js/timer.js?v=2'> </script>
+<script src='js/game.js?v=14'> </script>
+<script src='js/helpers.js?v=6'> </script>
+<script src='js/saveload.js?v=14'> </script>
+
+    <div id='header'>
+        <table id='menutable'>
+            <tr>
+                <td id='homeTd'>
+                    <!-- 1) return back to BSE-->
+                    <!--a class='btn' href='https://bestsiteever.ru'>Home</a-->
+                </td>
+                <td id='timerTd'>
+                    <!-- 2) timer-->
+                    <span class='' id='timer'>Loading...</span>
+                </td>
+                <td id='statusTd'>
+                    <!-- 3) .. -->
+                    <span id="status"></span>
+                    <div id='lbDialog' title='Leaderboard'><div id='lbTableWrap'>hello</div></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="gameDiv">
+        <canvas id="myCanvas"/>
+    </div>
+    <div id="leaderBoardSend">
+        <input id='playerName' type='text' value='Enter your name here' placeholder="Your nickname" maxlength='25'></input><br>
+        <a class='butn' id='sendScore'>Submit score!</a>
+        <a class='butn-gray' id='cancelScore'>Cancel</a>
+    </div>
+    <div>
+        <br>
+        <div id="leaderBoardDownwards">
+        </div>
+    </div>
+    <div id="footer">
+        Eyetest on bestsiteever.net
+    </div>
+
+</body>
+</html>

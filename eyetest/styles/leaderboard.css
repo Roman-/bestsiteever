@@ -1,0 +1,39 @@
+#leaderBoardSend {
+    margin: 0 auto;
+    display: table;
+}
+
+#leaderBoardDownwards {
+    width: 100%;
+}
+
+#leaderBoardSend {
+    padding: 10px;
+}
+
+#leaderboard {
+    width: 100%;
+    color: white;
+    background-color: #323232;
+    font-size: 38px;
+}
+
+#leaderboard tr:nth-child(even) {background: #000508}
+#leaderboard tr:nth-child(odd) {background: #000002}
+#leaderboard thead {background: #0f0f0f}
+
+table #leaderboard td {
+    border: 1px solid gray;
+}
+
+.scoretd {
+    text-align: center;
+    font-weight: bold;
+    color: yellow;
+}
+
+.playername {
+  color: #fff;
+  text-shadow: 0 0 2px yellow;
+}
+
